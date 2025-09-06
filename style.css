@@ -394,6 +394,53 @@ form input{
     }
 }
 
+@media screen and (max-width: 339px){
+    nav {
+        flex-wrap: wrap; /* Permet aux liens de passer à la ligne */
+        gap: 5px; /* Espacement réduit */
+        justify-content: center; /* Centrage */
+        padding: 5px; /* Petit padding interne */
+        height: auto; /* Hauteur automatique pour accueillir plusieurs lignes */
+    }
+
+    nav a {
+        font-size: 0.9em; /* Taille du texte réduite */
+        padding: 5px; /* Padding réduit pour ne pas dépasser */
+    }
+
+    .rectangleborder1 a {
+        width: auto; /* largeur auto pour s'adapter au texte */
+        min-width: 60px; /* largeur minimale */
+        padding: 5px 10px; /* padding vertical/horizontal */
+        font-size: 0.8em; /* texte plus petit */
+        justify-content: center;
+        align-items: center;
+        margin: 5px; /* ajoute de l’espace entre les boutons */
+    }
+
+    .rectangleborder1 {
+       display: flex;
+        flex-direction: column; /* empile le contenu verticalement */
+        justify-content: space-around;
+        align-items: center;
+        height: auto; /* hauteur auto pour s’adapter au contenu */
+    }
+
+    .rectangleborder1 a {
+        margin: 5px; /* espace uniforme autour des boutons */
+    }
+
+    .rectangleborder1 a:first-child {
+        margin-top: 10px;
+    }
+
+    .rectangleborder1 a:last-child {
+        margin-bottom: 10px;
+    }
+}
+
+
+
 /* Styles pour tablette (entre 481px et 1024px) */
 @media screen and ( min-width:481px) and (max-width:1024px){
    /* Titres sur tablette */
