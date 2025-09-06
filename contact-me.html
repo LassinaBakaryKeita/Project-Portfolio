@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-moi</title> 
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- En-tête avec navigation -->
+    <header>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="a-propos.html">À propos</a> 
+            <a href="contact-me.html">Contactez-moi</a> 
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="titre">Vous souhaitez travailler avec moi ou en savoir plus ? Laissez-moi un message, je vous répondrai avec plaisir</h2>
+        
+        <!-- Conteneur du formulaire de contact -->
+        <div class="conteneur7">
+            <form method="post" action=""> 
+
+                <!-- Champ Prénom -->
+                <div>
+                    <label for="prenom">Prénom</label> <br>
+                    <input type="text" name="prenom" id="prenom" required> 
+                </div>
+
+                <!-- Champ Nom -->
+                <div>
+                    <label for="nom">Nom</label> <br>
+                    <input type="text" name="nom" id="nom"> 
+                </div>
+                
+                <!-- Champ Email -->
+                <div>
+                    <label for="email">Email</label> <br>
+                    <input type="email" name="email" id="email" placeholder="nom@gmail.com" required>
+                </div>
+                
+                <!-- Champ Message -->
+                <div>
+                    <label for="message">Message</label> <br>
+                    <textarea name="message" id="message" placeholder="Décrivez votre projet ou demande..." required></textarea> 
+                </div>
+
+                <!-- Boutons d'action -->
+                <div class="conteneur8">  
+                    <button type="submit">Envoyer</button> 
+                    <button type="reset">Réinitialiser</button> 
+                </div> 
+            </form>
+        </div>
+    </main>
+
+    <!-- Pied de page avec liens de contact -->
+    <footer>
+        <a href="mailto:lassbakkeita6@gmail.com" aria-label="Envoyer un email">
+            <img src="images/PhotoLiens/logo-email.png" alt="Icône email">
+        </a>
+        <a href="#" aria-label="Profil Facebook">
+            <img src="images/PhotoLiens/logo-facebook.png" alt="Icône Facebook">
+        </a>
+        <a href="https://github.com/LassinaBakaryKeita" aria-label="Profil GitHub">
+            <img src="images/PhotoLiens/logo-github.png" alt="Icône GitHub">
+        </a>
+        <a href="#" aria-label="Profil LinkedIn">
+            <img src="images/PhotoLiens/logo-Linkedin.png" alt="Icône LinkedIn">
+        </a>
+    </footer>
+</body>
+</html>

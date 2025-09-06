@@ -1,0 +1,536 @@
+/* ===== RESET ET CONFIGURATION DE BASE ===== */
+
+/* Reset universel pour tous les éléments */
+*{
+    box-sizing: border-box; /* Inclut les bordures et padding dans les dimensions */
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 0; /* Supprime les paddings par défaut */
+}
+
+/* Configuration de base pour html et body */
+html, body {
+    height: 100%; /* Hauteur complète de la fenêtre */
+    margin: 0; /* Suppression de la marge */
+}
+
+/* Style des titres h1 et h5 */
+h1,h5{
+    color: #ffd166; /* Couleur dorée pour les titres */
+}
+
+/* Style général du body */
+body {
+    background: linear-gradient(to right, #2a004f, #002a3f); /* Dégradé violet-bleu foncé */
+    color: white; /* Texte blanc pour contraste */
+    display: flex; /* Utilisation de flexbox */
+    flex-direction: column; /* Disposition en colonne */
+    min-height: 100vh; /* Hauteur minimale de 100% de la hauteur visible */
+}
+
+/* ===== STYLES DE NAVIGATION ===== */
+
+/* Barre de navigation principale */
+nav{
+    display:flex; /* Disposition flex */
+    justify-content: center; /* Centrage horizontal */
+    gap:15px; /* Espacement entre les éléments */
+    background-color: white; /* Fond blanc */
+    height: 60px; /* Hauteur fixe */
+    position: fixed; /* Position fixe en haut de page */
+    right: 0; /* Alignement à droite */
+    left: 0; /* Alignement à gauche */
+    top:0; /* Collé en haut */
+    z-index: 5; /* Au-dessus du contenu */
+}   
+
+/* Style du paragraphe dans conteneur0 */
+.conteneur0 p {
+  font-weight: bold; /* Texte en gras */
+  margin-left:45px; /* Marge à gauche */
+  padding-right: 0; /* Pas de padding à droite */
+  padding-top: 120px; /* Grand padding en haut */
+  font-size: 1.4em; /* Taille de police augmentée */
+}
+
+/* Style des liens de navigation et des liens dans conteneur2 */
+nav a,
+.conteneur2 a{
+    margin-top: 10px; /* Marge en haut */
+    margin-bottom: 10px; /* Marge en bas */
+    text-decoration: none; /* Pas de soulignement */
+    border: 1px solid black; /* Bordure noire fine */
+    border-radius: 5px; /* Coins arrondis */
+    padding: 10px; /* Espacement interne */
+    background-color: white; /* Fond blanc */
+    color: black; /* Texte noir */
+    font-size: 1.2em; /* Taille de police augmentée */
+}
+
+/* Effet au survol des liens de navigation */
+nav a:hover{
+    color: white; /* Texte blanc */
+    background: linear-gradient(to right, #2a004f, #002a3f); /* Dégradé comme fond */
+}
+
+/* ===== STYLES DU CONTENU PRINCIPAL ===== */
+
+/* Contenu principal */
+main {
+    padding-top: 70px; /* Espace pour la navigation fixe */
+    flex: 1; /* Prend tout l'espace disponible, pousse le footer vers le bas */
+}
+
+/* Titre principal h1 */
+h1 {
+    text-align: center; /* Centrage du texte */
+    margin-bottom:150px; /* Grande marge en bas */
+}
+
+/* Style de la photo personnelle */
+.ma-photo {
+  width: 100%; /* Largeur responsive */
+  max-width: 400px; /* Largeur maximale sur grand écran */
+  height: auto; /* Hauteur proportionnelle */
+  border-radius: 25%; /* Forme circulaire/ovale */
+  display: block; /* Élément de type bloc */
+  margin: 0 auto; /* Centrage horizontal */
+}
+
+/* Conteneurs flexibles */
+.conteneur0,
+.conteneur1{
+    display: flex; /* Disposition flex */
+    flex-direction: row; /* Direction horizontale */
+    justify-content: space-around; /* Espacement égal entre éléments */
+    gap:35px; /* Espace entre les éléments */
+}
+
+/* ===== STYLES DU PIED DE PAGE ===== */
+
+/* Images dans le footer */
+footer a img{
+    width: 50px; /* Taille fixe des icônes */
+}
+
+/* Liens dans le footer */
+footer a{
+    background-color: white; /* Fond blanc pour les liens */
+}
+
+/* Style général du footer */
+footer {
+    height: 70px; /* Hauteur fixe */
+    display: flex; /* Disposition flex */
+    justify-content: center; /* Centrage horizontal */
+    align-items: center; /* Centrage vertical */
+    gap: 10px; /* Espace entre les icônes */
+    background-color: white; /* Fond blanc */
+    position: static; /* Position normale (pas fixe) */
+    bottom: auto; /* Pas de positionnement en bas */
+    width: 100%; /* Pleine largeur */
+    position: static; /* Redéfinition en position normale */
+}
+
+/* ===== STYLES POUR LA PAGE À PROPOS ===== */
+
+/* Conteneur des projets */
+.conteneur3{
+    display: flex; /* Disposition flex */
+    justify-content: space-around; /* Espacement égal */
+    flex-wrap: wrap; /* Passage à la ligne si nécessaire */
+    gap:20px; /* Espace entre les éléments */
+}  
+
+/* Conteneur de navigation secondaire */
+.conteneur2{
+    padding-right: 10px; /* Petit padding à droite */
+    display: flex; /* Disposition flex */
+    flex-direction: column; /* Direction verticale */
+    gap: 10px; /* Espace entre les liens */
+}
+
+/* Effet au survol des liens dans conteneur2 */
+.conteneur2 a:hover {
+    color: white; /* Texte blanc */
+    background-color: #ffd166; /* Fond doré */
+    border-color: #ffd166; /* Bordure dorée */
+}
+
+/* Style des titres */
+.titre,
+h3{
+    margin-bottom: 30px; /* Marge en bas */
+    text-align: center; /* Centrage du texte */
+    color: #ffd166; /* Couleur dorée */
+}
+
+/* Style des cartes de projet */
+.rectangleborder1{
+    background: linear-gradient(to bottom, #3a0d6c, #1f1f3a); /* Dégradé violet-bleu */
+    border: 1px solid #ffffffaa; /* Bordure blanc semi-transparent */
+    border-radius: 10px; /* Coins arrondis */
+    width:275px; /* Largeur fixe */
+    height: 400px; /* Hauteur fixe */
+    display: flex; /* Disposition flex */
+    flex-direction: column; /* Direction verticale */
+    justify-content: space-around; /* Espacement égal entre éléments */
+}
+
+/* Images dans les cartes de projet */
+.rectangleborder1 img{
+  margin-top: 15px; /* Marge en haut */
+  border-radius: 10px; /* Coins arrondis */
+  display: flex; /* Disposition flex */
+  justify-content: center; /* Centrage horizontal */
+  width: 200px; /* Largeur fixe */
+  height:150px; /* Hauteur fixe */
+  object-fit: cover; /* Conserve les proportions et remplit l'espace */
+  margin: 0 auto; /* Centrage horizontal */
+  display: block; /* Élément de type bloc */
+}
+
+/* Paragraphes dans les cartes de projet */
+.rectangleborder1 p{
+    font-size: 0.9rem; /* Taille de police réduite */
+    text-align: center; /* Centrage du texte */
+    color: #f0f0f0; /* Couleur gris clair */
+}
+
+/* Liens dans les cartes de projet */
+.rectangleborder1 a{
+    background-color: #ff6f61; /* Fond corail */
+    color: white; /* Texte blanc */
+    text-decoration: none; /* Pas de soulignement */
+    margin-left: 100px; /* Marge à gauche pour centrage approximatif */
+    width: 70px; /* Largeur fixe */
+    height: 30px; /* Hauteur fixe */
+    border: 1px solid white; /* Bordure blanche */
+    border-radius: 5px; /* Coins arrondis */
+    display: flex; /* Disposition flex */
+    justify-content: center; /* Centrage horizontal */
+    align-items: center; /* Centrage vertical */
+}
+
+/* Effet au survol des liens dans les cartes */
+.rectangleborder1 a:hover{
+   background-color: #ff9472; /* Fond corail clair */
+}
+
+/* Titres h5 dans les cartes de projet */
+.rectangleborder1 h5{
+    text-align: center; /* Centrage du texte */
+    color: #f0f0f0; /* Couleur gris clair */
+}
+
+/* Effet d'agrandissement au survol des cartes */
+.rectangleborder1:hover,
+.carreborder:hover{
+    transition: transform 1s ease; /* Animation fluide de 1s */
+    transform: scale(1.2); /* Agrandissement de 20% */
+}
+
+/* Style des cartes de compétences */
+.carreborder{
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Bordure blanc très transparent */
+    border-radius: 12px; /* Coins arrondis */
+    background: linear-gradient(145deg, rgba(74, 0, 115, 0.7), rgba(0, 67, 101, 0.7)); /* Dégradé violet-bleu transparent */
+    width: 250px; /* Largeur fixe */
+    height: 250px; /* Hauteur fixe */
+    display:flex; /* Disposition flex */
+    flex-direction: column; /* Direction verticale */
+    justify-content: center; /* Centrage vertical */
+    align-items: center; /* Centrage horizontal */
+}
+
+/* Images dans les cartes de compétences */
+.carreborder img{
+    width: 120px; /* Largeur fixe */
+    height: auto; /* Hauteur proportionnelle */
+    border-radius: 10px; /* Coins arrondis */
+}
+
+/* Grille des compétences */
+.conteneur4{
+    margin-left: 25px; /* Marge à gauche */
+    display: grid; /* Disposition grid */
+    grid-template-columns: repeat(3,1fr); /* 3 colonnes de taille égale */
+    grid-template-rows: repeat(2,1fr); /* 2 lignes de taille égale */
+    gap:15px; /* Espace entre les éléments */
+}
+
+/* Conteneur des outils de simulation */
+.conteneur5{
+    display:flex; /* Disposition flex */
+    justify-content: center; /* Centrage horizontal */
+    gap:45px; /* Grand espace entre éléments */
+    margin-bottom: 35px; /* Marge en bas */
+}
+
+/* Marges pour les titres de la section compétences */
+#skill h2,
+#skill h3{
+    margin-top: 35px; /* Marge en haut */
+}
+
+/* ===== STYLES POUR LA PAGE CONTACT ===== */
+
+/* Conteneur principal du formulaire */
+.conteneur7{
+    display: flex; /* Disposition flex */
+    flex-direction: column; /* Direction verticale */
+    justify-content: center; /* Centrage vertical */
+    align-items: center; /* Centrage horizontal */
+    gap:30px; /* Espace entre les éléments */
+}
+
+/* Conteneur des boutons du formulaire */
+.conteneur8{
+    margin-top: 80px; /* Grande marge en haut */
+    display: flex; /* Disposition flex */
+    gap:50px; /* Grand espace entre boutons */
+}
+
+/* Style des boutons du formulaire */
+.conteneur8 button{
+    background-color: #ff6f61; /* Fond corail */
+    color: white; /* Texte blanc */
+    width: 80px; /* Largeur fixe */
+    height: 30px; /* Hauteur fixe */
+    border-radius: 5px; /* Coins arrondis */
+}
+
+/* Effet au survol des boutons */
+.conteneur8 button:hover{
+    background-color: #ff9472; /* Fond corail clair */
+    cursor: pointer; /* Curseur de type pointer */
+}
+
+/* Style du formulaire */
+form{
+    background: linear-gradient(to bottom, #3a0d6c, #1f1f3a); /* Dégradé violet-bleu (première déclaration) */
+    background: linear-gradient(145deg, rgba(74, 0, 115, 0.7), rgba(0, 67, 101, 0.7)); /* Dégradé violet-bleu transparent (écrase la précédente) */
+    border: 1px solid white; /* Bordure blanche */
+    border-radius: 10px; /* Coins arrondis */
+    height: 70vh; /* 70% de la hauteur visible */
+    width: 50vh; /* 50% de la hauteur visible (problématique pour la largeur) */
+    display: flex; /* Disposition flex */
+    flex-direction: column; /* Direction verticale */
+    justify-content: center; /* Centrage vertical */
+    align-items: center; /* Centrage horizontal */
+    gap:25px; /* Espace entre les champs */
+}
+
+/* Champs de saisie du formulaire */
+form input{
+    width:100%; /* Pleine largeur */
+    height: 50%; /* 50% de hauteur (peut être problématique) */
+}
+
+/* ===== RESPONSIVITÉ ===== */
+
+/* Styles pour mobile (écran jusqu'à 480px) */
+@media screen and ( max-width:480px){
+    /* Paragraphes sur mobile */
+    p{
+        font-size: 0.9em; /* Taille de police réduite */
+        padding-top: 10px; /* Petit padding en haut */
+        margin-left: 5px; /* Petite marge à gauche */
+    }
+
+    /* Titre h1 sur mobile */
+    h1{
+        margin-bottom:70px; /* Marge en bas réduite */
+    }
+
+    /* Photo sur mobile */
+    .ma-photo{
+      max-width: 300px; /* Largeur maximale réduite */
+      height: auto; /* Hauteur proportionnelle */
+    }
+
+    /* Conteneurs sur mobile */
+    .conteneur0,
+    .conteneur1{
+        display: flex; /* Disposition flex */
+        flex-direction: column-reverse; /* Ordre inversé (photo avant texte) */
+        justify-content: center; /* Centrage vertical */
+        align-items: center; /* Centrage horizontal */
+        gap:20px; /* Espace entre éléments */
+        text-align: center; /* Centrage du texte */
+    }
+
+    /* Paragraphe dans conteneur0 sur mobile */
+    .conteneur0 p{
+        padding-top: 0; /* Pas de padding en haut */
+    }
+
+    /* Grille de compétences sur mobile */
+    .conteneur4{
+      margin-left: 75px; /* Marge à gauche */
+      display: grid; /* Disposition grid */
+      grid-template-columns: repeat(1,1fr); /* 1 colonne seulement */
+      grid-template-rows: repeat(6,1fr); /* 6 lignes */
+      gap:45px; /* Espace entre éléments */
+    }  
+
+    /* Conteneur d'outils sur mobile */
+    .conteneur5{
+       flex-direction: column; /* Direction verticale */
+       align-items: center; /* Centrage horizontal */
+       justify-content: center; /* Centrage vertical */
+       gap:45px; /* Espace entre éléments */
+    }
+    
+    /* Formulaire sur mobile */
+    form{
+        margin-top:45px; /* Marge en haut */
+        width: 35vh; /* Largeur relative à la hauteur */
+        height: 50vh; /* Hauteur relative à la hauteur visible */
+    }
+
+    /* Boutons du formulaire sur mobile */
+    .conteneur8{
+        margin-top: 3vh; /* Marge en haut relative */
+    }
+}
+
+/* Styles pour tablette (entre 481px et 1024px) */
+@media screen and ( min-width:481px) and (max-width:1024px){
+   /* Titres sur tablette */
+   h2{
+    font-size: 1.3em; /* Taille de police augmentée */
+   }
+
+   h5{
+    font-size: 1.1em; /* Taille de police augmentée */
+   }
+
+    /* Paragraphes sur tablette */
+    p{
+        font-size: 1em; /* Taille de police normale */
+        padding-top: 10px; /* Petit padding en haut */
+        margin-left: 5px; /* Petite marge à gauche */
+    }
+
+    /* Titre h1 sur tablette */
+    h1{
+        margin-bottom:50px; /* Marge en bas réduite */
+    }
+
+    /* Photo sur tablette */
+    .ma-photo{
+        width: 70%; /* Largeur relative */
+        height: 40%; /* Hauteur relative */
+    }
+
+    /* Photo sur tablette (règle dupliquée) */
+    .ma-photo {
+      max-width: 300px; /* Largeur maximale */
+    }
+
+    /* Conteneurs sur tablette */
+    .conteneur0,
+    .conteneur1{
+        display: flex; /* Disposition flex */
+        flex-direction: column-reverse; /* Ordre inversé */
+        justify-content: center; /* Centrage vertical */
+        align-items: center; /* Centrage horizontal */
+        gap:75px; /* Espace important entre éléments */
+    }
+
+    /* Conteneur0 sur tablette */
+    .conteneur0{
+        margin-top: 200px; /* Grande marge en haut */
+    }
+
+    /* Paragraphe dans conteneur0 sur tablette */
+    .conteneur0 p{
+        padding-top: 0; /* Pas de padding en haut */
+    }
+
+    /* Grille de compétences sur tablette */
+    .conteneur4{
+      display: grid; /* Disposition grid */
+      grid-template-columns: repeat(2,1fr); /* 2 colonnes */
+      grid-template-rows: repeat(3,1fr); /* 3 lignes */
+      gap:45px; /* Espace entre éléments */
+      justify-content: center; /* Centrage horizontal */
+      justify-items: center; /* Centrage des éléments */
+    }  
+
+    /* Cartes de compétences sur tablette */
+    .carreborder{
+        padding-right:0; /* Pas de padding à droite */
+        width: 300px; /* Largeur augmentée */
+        height: 300px; /* Hauteur augmentée */
+    }
+
+    /* Cartes de projet sur tablette */
+    .rectangleborder1{
+        height: 430px; /* Hauteur augmentée */
+    }
+
+    /* Conteneur6 sur tablette */
+    .conteneur6{
+      display: flex; /* Disposition flex */
+      justify-content: center; /* Centrage horizontal */
+      align-items: center; /* Centrage vertical */
+      gap:20px; /* Espace entre éléments */
+   }
+
+   /* Formulaire sur tablette */
+   form{
+        height: 50vh; /* 50% de la hauteur visible */
+        width: 40vh; /* 40% de la hauteur visible */
+    }
+
+    /* Conteneur7 sur tablette */
+    .conteneur7{
+        margin-top:75px; /* Marge en haut */
+    }
+}
+
+/* Media query spécifique pour tablette 540px de large */
+@media screen and (width:540px) and (height:720px) {
+  /* Grille de compétences sur tablette 540px */
+  .conteneur4 {
+    grid-template-columns: 1fr; /* 1 colonne seulement */
+    grid-template-rows: repeat(6, auto); /* 6 lignes de hauteur automatique */
+    margin-left: 0; /* Pas de marge à gauche */
+    justify-items: center; /* Centrage des éléments */
+  }
+}
+
+/* Media query spécifique pour tablette 540x720 */
+@media screen and (width:540px) and (height:720px) {
+  /* Formulaire sur tablette 540x720 */
+  form {
+    width: 70%; /* 70% de largeur */
+    height: auto; /* Hauteur automatique */
+    padding: 20px; /* Padding interne */
+  }
+}
+
+/* Media query spécifique pour tablette 1024x600 */
+@media screen and (width:1024px) and (height:600px) {
+  /* Formulaire sur tablette 1024x600 */
+  form {
+    width: 50%; /* 50% de largeur */
+    height: auto; /* Hauteur automatique */
+    padding: 25px; /* Padding interne */
+  }
+
+  /* Conteneur7 sur tablette 1024x600 */
+  .conteneur7{
+    margin-top: 40px; /* Marge en haut réduite */
+    margin-bottom: 20px; /* Marge en bas */
+  }
+}
+
+/* Styles pour desktop (au-delà de 1024px) */
+@media screen and (min-width:1025px) {
+    /* Conteneur6 sur desktop */
+    .conteneur6{
+        padding-left: 150px; /* Grand padding à gauche */
+    }
+}
