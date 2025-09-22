@@ -13,8 +13,11 @@ html, body {
     margin: 0; /* Suppression de la marge */
 }
 
-/* Style des titres h1 et h5 */
-h1,h5{
+/* Style des titres h1 ,h5, le lien "ENSAF" */
+h1,
+h5,
+p a
+{
     color: #ffd166; /* Couleur dorée pour les titres */
 }
 
@@ -194,6 +197,7 @@ h3{
     font-size: 0.9rem; /* Taille de police réduite */
     text-align: center; /* Centrage du texte */
     color: #f0f0f0; /* Couleur gris clair */
+    padding: 10px;  /* Marge interieur au description du projet */
 }
 
 /* Liens dans les cartes de projet */
@@ -220,13 +224,14 @@ h3{
 .rectangleborder1 h5{
     text-align: center; /* Centrage du texte */
     color: #f0f0f0; /* Couleur gris clair */
+    padding: 10px; /* Marge interieur au titre du projet */
 }
 
 /* Effet d'agrandissement au survol des cartes */
 .rectangleborder1:hover,
 .carreborder:hover{
     transition: transform 1s ease; /* Animation fluide de 1s */
-    transform: scale(1.2); /* Agrandissement de 20% */
+    transform: scale(1.1); /* Agrandissement de 20% */
 }
 
 /* Style des cartes de compétences */
@@ -235,11 +240,16 @@ h3{
     border-radius: 12px; /* Coins arrondis */
     background: linear-gradient(145deg, rgba(74, 0, 115, 0.7), rgba(0, 67, 101, 0.7)); /* Dégradé violet-bleu transparent */
     width: 250px; /* Largeur fixe */
-    height: 250px; /* Hauteur fixe */
+    height: 300px; /* Hauteur fixe */
     display:flex; /* Disposition flex */
     flex-direction: column; /* Direction verticale */
     justify-content: center; /* Centrage vertical */
     align-items: center; /* Centrage horizontal */
+}
+
+/*Le texte dans les cartes de compétences */
+.carreborder p{
+    padding: 10px;  /* Marge interieur au texte qui se trouve dans les cartes de compétences*/
 }
 
 /* Images dans les cartes de compétences */
