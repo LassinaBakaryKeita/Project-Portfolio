@@ -14,9 +14,6 @@ Ce portfolio a pour objectif de :
 - Présenter mes **compétences techniques**
 - Faciliter la prise de contact avec des recruteurs ou collaborateurs
 
-👉 **Site en ligne** :  
-🔗 https://lassinabakarykeita.github.io *(si hébergé sur GitHub Pages)*
-
 ---
 
 ## 🛠️ Technologies utilisées
@@ -64,15 +61,6 @@ Ce portfolio a pour objectif de :
 
 ---
 
-## 📸 Aperçu visuel
-
-*(Ajoute ici une ou deux captures d’écran du site si tu veux)*
-
-```markdown
-![Aperçu du portfolio](images/screenshot.png)
-```
-
----
 
 ## 🚀 Lancer le projet en local
 
@@ -94,7 +82,6 @@ cd ton-repo
 
 ## 📬 Me contacter
 
-* **GitHub** : [https://github.com/LassinaBakaryKeita](https://github.com/LassinaBakaryKeita)
 * **LinkedIn** : [https://www.linkedin.com/in/lassina-bakary-keïta-b28626370/](https://www.linkedin.com/in/lassina-bakary-keïta-b28626370/)
 * **Facebook** : [https://www.facebook.com/lassina.bakary.keita](https://www.facebook.com/lassina.bakary.keita)
 * **TikTok** : [https://www.tiktok.com/@lassina.bakary.ke](https://www.tiktok.com/@lassina.bakary.ke)
@@ -113,15 +100,4 @@ Toute réutilisation doit mentionner l’auteur.
 Merci d’avoir pris le temps de visiter mon portfolio.
 N’hésitez pas à me contacter pour toute collaboration ou opportunité !
 
-```
-
----
-
-### ✅ Si tu veux, je peux aussi :
-- Adapter le README pour **GitHub Pages**
-- Le rendre **plus orienté recruteur**
-- Ajouter une section **Objectifs professionnels**
-- Le rédiger **en anglais**
-
-Dis-moi 😉
 ```
