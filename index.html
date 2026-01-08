@@ -1,52 +1,477 @@
 <!DOCTYPE html>
-<html lang="fr"> 
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
-    <link href="style.css" rel="stylesheet"> 
+    <title>Portfolio - Lassina Bakary Keïta</title>
+    
+    <!-- CSS personnalisé -->
+    <link href="style.css" rel="stylesheet">
+    
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    
+    <!-- Librairie Typed.js pour l'effet de frappe -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+    <!-- Librairie GSAP pour les animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/Flip.min.js"></script>
+    
+    <!-- JavaScript personnalisé -->
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <!-- En-tête avec navigation -->
+    <!-- ==================== EN-TÊTE ==================== -->
     <header>
         <nav>
-            <a href="index.html">Accueil</a>
-            <a href="a-propos.html">À propos</a> 
-            <a href="contact-me.html">Contactez-moi</a> 
+            <div class="logo-container">
+                <a href="#about" class="logo">LBK</a>
+            </div>
+            
+            <!-- Menu Hamburger pour mobile -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <!-- Navigation Desktop -->
+            <div class="nav-links" id="navLinks">
+                <a href="#about" class="liensNavivation">About</a>
+                <a href="#project" class="liensNavivation">Project</a>
+                <a href="#certification" class="liensNavivation">Certification</a>
+                <a href="#skill" class="liensNavivation">Skills</a>
+                <a href="#experience" class="liensNavivation">Experience</a>
+                <a href="#contact-me" class="liensNavivation">Contact</a>
+            </div>
         </nav>
     </header>
 
-
-    <!-- Contenu principal -->
+    <!-- ==================== CONTENU PRINCIPAL ==================== -->
     <main>
-        <h1>¡Hola y Bienvenido!</h1>
+        <!-- SECTION À PROPOS -->
+        <section id="about">
+            <div class="conteneur-presentation">
+                <div class="texte-presentation">
+                    <h1 class="titre-principal">Hi!</h1>
+                    <p>
+                        I'm <span id="mon-nom">Lassina Bakary Keïta</span><br>
+                        I'm <span id="ma-filiere">Software Engineering and Artificial Intelligence Student</span> at 
+                        <a href="https://ensaf.ac.ma/?controller=pages&action=home" target="_blank" class="lien-ensaf">ENSAF</a>.<br>
+                        Passionate about the world of software development, I am particularly interested in web, mobile, and software development.
+                        I am also deeply interested in Artificial Intelligence and Data Science, fields that motivate me to learn every day and take on new challenges.
+                    </p>
+                </div>
+                <div class="photo-container">
+                    <img src="images/MaPhoto.jpeg" alt="Portrait de Lassina Bakary Keïta" class="ma-photo">
+                </div>
+            </div>
+            
+            <div class="conteneur-liens-externes">
+                <div class="logos-reseaux-sociaux">
+                    <a href="https://github.com/LassinaBakaryKeita" aria-label="GitHub" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/lassina.bakary.keita" aria-label="Facebook" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/lassina-bakary-ke%C3%AFta-b28626370/" aria-label="LinkedIn" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@lassina.bakary.ke" aria-label="TikTok" target="_blank">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+                <button type="button" class="btn-cv">Download CV</button>
+            </div>
+        </section>
 
-        <!-- Section de présentation avec texte et photo -->
-        <div class="conteneur0">
-            <p>My name is Lassina Bakary Keïta, a Software Engineering and Artificial Intelligence student at <a href="https://ensaf.ac.ma/?controller=pages&action=home"  target="_blank">ENSAF</a> .<br>
-             Passionate about the world of software development, I am particularly interested in web, mobile, and software development.
-             I am also deeply interested in Artificial Intelligence and Data Science, fields that motivate me to learn every day and take on new challenges.
-            </p>
-            <img src="images/MaPhoto.jpg" alt="Portrait de Lassina Bakary Keïta" class="ma-photo"> 
-        </div>
+        <!-- SECTION PROJETS -->
+        <section id="project">
+            <h2 class="titre-section">Mes projets réalisés</h2>
+            <div class="conteneur-projets">
+                
+                <!-- Projet 1: Site de photographie -->
+                <div class="card project-card">
+                    <img src="images/PhotoProjet/RobbieLensPhotography.png" alt="Photography">
+                    <div class="informations-card">
+                        <h6>Site Web de Robbie Lens Photography</h6>
+                        <p>Ce site web de photographe professionnel, conçu en HTML5 et CSS3, présente ses services, ses projets récents et son portfolio.</p>
+                        <a href="https://lassinabakarykeita.github.io/My-first-learning-project/" target="_blank">Discover</a>
+                    </div>
+                </div>
+
+                <!-- Projet 2: Calculatrice -->
+                <div class="card project-card">
+                    <img src="images/PhotoProjet/Calculatrice.png" alt="photo d'une calculatrice">
+                    <div class="informations-card">
+                        <h6>App web : La calculatrice de Lassina</h6>
+                        <p>Il s'agit d'une calculatrice simple mais puissante, construite avec HTML5, CSS3 et JavaScript, offrant une interface interactive et réactive.</p>
+                        <a href="https://lassinabakarykeita.github.io/Project-Calculator/" target="_blank">Discover</a>
+                    </div>
+                </div>
+
+                <!-- Projet 3: Site ILIA -->
+                <div class="card project-card">
+                    <img src="images/PhotoProjet/iliasite.png" alt="Des personnes entrain de travailler à propos d'un projet">
+                    <div class="informations-card">
+                        <h6>Un site web pour Ma filière</h6>
+                        <p>Il s'agit d'un projet de collaboration qui est basé sur une présentation de la communauté ILIA et la facilitation du partage de connaissances.</p>
+                        <a href="https://farahcrafts.github.io/Ilia-site/" target="_blank">Discover</a>
+                    </div>
+                </div>
+
+                <!-- Projet 4: Site Azertype -->
+                <div class="card project-card">
+                    <img src="images/PhotoProjet/Azertype.png" alt="Une main entrain de taper sur clavier une instruction">
+                    <div class="informations-card">
+                        <h6>App web : AzerType – Jeu de dactylographie</h6>
+                        <p>AzerType est une application interactive conçue avec HTML5, CSS3 et JavaScript, permettant de s'entraîner à taper plus vite au clavier.</p>
+                        <a href="https://lassinabakarykeita.github.io/Projet_Apprentissage_De_JavaScript/" target="_blank">Discover</a>
+                    </div>
+                </div>
+
+                <!-- Projet 5: Réseau social -->
+                <div class="card project-card">
+                    <img src="images/PhotoProjet/ReseauSocial.jpg" alt="illustration d'un reseau social">
+                    <div class="informations-card">
+                        <h6>Simulation d'un réseau social</h6>
+                        <p>Projet de simulation d'un réseau social en C axé sur l'implémentation et l'interconnexion des structures de données.</p>
+                        <a href="https://youtu.be/IIDaGb9QXGk" target="_blank">Discover</a>
+                    </div>
+                </div>
+
+                <!-- Projet 6: Site E-commerce Alimentaire -->
+                <div class="card project-card">
+                    <img src="images/PhotoProjet/ecommerceAlimentaire.png" alt="Site e-commerce alimentaire">
+                    <div class="informations-card">
+                        <h6>Organic Food Store</h6>
+                        <p>Organic Food Store est un site web responsive moderne pour une boutique de produits alimentaires 100% biologiques.</p>
+                        <a href="https://lassinabakarykeita.github.io/Projet_Site_E-Commerce_Alimentaire/" target="_blank">Discover</a>
+                    </div>
+                </div>
+
+                <!-- Projet 7: Site LassinaQualiSol -->
+                <div class="card project-card">
+                    <img src="images/PhotoProjet/lassinaQualiSol.png" alt="Application d'analyse de sol">
+                    <div class="informations-card">
+                        <h6>LassinaQualiSol</h6>
+                        <p>Application web innovante d'analyse de la qualité des sols agricoles, développée avec HTML5, CSS3, JavaScript, Bootstrap 5.</p>
+                        <a href="https://lassinabakarykeita.github.io/Project-App-Web-LassinaQualiSol/" target="_blank">Discover</a>
+                    </div>
+                </div>
+
+                <!-- Projet 8: Site LassiExpense -->
+                <div class="card project-card">
+                    <img src="images/PhotoProjet/lassiExpense.png" alt="Application mobile de gestion de budget">
+                    <div class="informations-card">
+                        <h6>LassiExpense</h6>
+                        <p>Application mobile de gestion de budget développée avec Flutter et Dart pour suivre les dépenses et gérer les budgets.</p>
+                        <a href="https://github.com/LassinaBakaryKeita/Projet-App-Mobile-LassiExpense" target="_blank">Discover</a>
+                    </div>
+                </div>
+
+                <!-- Projet 9: Site Quiz Master -->
+                <div class="card project-card">
+                    <img src="images/PhotoProjet/quizMaster.png" alt="Application web de quiz">
+                    <div class="informations-card">
+                        <h6>Quiz Master</h6>
+                        <p>Application web de quiz interactif multi-matières et multi-niveaux, développée avec HTML5, CSS3 et JavaScript.</p>
+                        <a href="https://lassinabakarykeita.github.io/Projet_Jeux_Quiz/" target="_blank">Discover</a>
+                    </div>
+                </div>
+
+                <!-- Projet 10: Site Calculatrice Android -->
+                <div class="card project-card">
+                    <img src="images/PhotoProjet/CalculatriceAndroid.png" alt="Application Android calculatrice">
+                    <div class="informations-card">
+                        <h6>Calculatrice-Android</h6>
+                        <p>Application mobile Android développée en Java et XML avec Android Studio pour opérations arithmétiques et conversions.</p>
+                        <a href="https://github.com/LassinaBakaryKeita/Projet_Android_Calculatrice" target="_blank">Discover</a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- SECTION CERTIFICATIONS -->
+        <section id="certification">
+            <h2 class="titre-section">Mes Certifications</h2>
+            <p class="a-venir">...À venir...</p>
+        </section>
+
+        <!-- SECTION COMPÉTENCES -->
+        <section id="skill">
+            <h2 class="titre-section">My Skills</h2>
+            
+            <!-- Langages Informatiques -->
+            <h3 class="categorie-skill">👉 Les langages Informatiques</h3>
+            <div class="conteneur-skills">
+                
+                <!-- Langage C -->
+                <div class="card gsap-card">
+                    <div class="front">
+                        <img src="images/PhotoSkills/logo-langageC.png" alt="logo du langage C">
+                    </div>
+                    <div class="back">
+                        <p>Maîtrise des bases (variables, chaînes, boucles) et des concepts avancés : fonctions, récursivité, pointeurs, allocation dynamique, structures de données.</p>
+                    </div>
+                </div>
+                
+                <!-- HTML5 -->
+                <div class="card gsap-card">
+                    <div class="front">
+                        <img src="images/PhotoSkills/logo-html5.png" alt="logo du langage html5">
+                    </div>
+                    <div class="back">
+                        <p>Maîtrise de la création et de la structuration de pages web : textes, images, liens, tableaux, formulaires, et intégration du CSS pour le style.</p>
+                    </div>
+                </div>
+                
+                <!-- CSS3 -->
+                <div class="card gsap-card">
+                    <div class="front">
+                        <img src="images/PhotoSkills/logo-css.png" alt="logo du langage css">
+                    </div>
+                    <div class="back">
+                        <p>Maîtrise du style et de la mise en page : couleurs, typographies, bordures, ombres, Flexbox, CSS Grid et responsive design avec Media Queries.</p>
+                    </div>
+                </div>
+                
+                <!-- JavaScript -->
+                <div class="card gsap-card">
+                    <div class="front">
+                        <img src="images/PhotoSkills/logo-javascript.png" alt="logo du langage JavaScript">
+                    </div>
+                    <div class="back">
+                        <p>Maîtrise des bases de la programmation, des concepts essentiels et expérience en manipulation du DOM, gestion des événements.</p>
+                    </div>
+                </div>
+                
+                <!-- Java -->
+                <div class="card gsap-card">
+                    <div class="front">
+                        <img src="images/PhotoSkills/logo-java.jpeg" alt="logo du langage Java">
+                    </div>
+                    <div class="back">
+                        <p>Maîtrise de Java orienté objet (classes, héritage, polymorphisme, interfaces), gestion du flux, fichiers et sérialisation.</p>
+                    </div>
+                </div>
+                
+                <!-- Xml -->
+                <div class="card gsap-card">
+                    <div class="front">
+                        <img src="images/PhotoSkills/logo-xml.jpg" alt="logo du langage xml">
+                    </div>
+                    <div class="back">
+                        <p>Maîtrise de XML pour la création d'interfaces Android, incluant structuration des layouts, configuration des composants.</p>
+                    </div>
+                </div>
+                
+                <!-- Dart -->
+                <div class="card gsap-card">
+                    <div class="front">
+                        <img src="images/PhotoSkills/logo-dart.jpg" alt="logo du langage dart">
+                    </div>
+                    <div class="back">
+                        <p>Connaissance de Dart via le développement Flutter, incluant variables, conditions, fonctions et structures simples.</p>
+                    </div>
+                </div>
+                
+                <!-- Python -->
+                <div class="card gsap-card">
+                    <div class="front">
+                        <img src="images/PhotoSkills/logo-python.png" alt="logo du langage python">
+                    </div>
+                    <div class="back">
+                        <p>En phase d'apprentissage ...</p>
+                    </div>
+                </div>
+                
+                <!-- MATLAB -->
+                <div class="card gsap-card">
+                    <div class="front">
+                        <img src="images/PhotoSkills/logo-matlab.jpeg" alt="logo du langage Matlab">
+                    </div>
+                    <div class="back">
+                        <p>Maîtrise des bases : création et manipulation de matrices, opérations mathématiques et programmation de scripts simples.</p>
+                    </div>
+                </div>
+                
+                <!-- LabVIEW -->
+                <div class="card gsap-card">
+                    <div class="front">
+                        <img src="images/PhotoSkills/logo-labview.jpeg" alt="logo du langage LabView">
+                    </div>
+                    <div class="back">
+                        <p>LabView : Maîtrise des bases comme modélisation et simulation de systèmes et circuits simples.</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Frameworks et Librairies -->
+            <h3 class="categorie-skill">👉 Les Frameworks et Librairies</h3>
+            <div class="conteneur-skills">
+                
+                <!-- Bootstrap -->
+                <div class="card gsap-card">
+                    <div class="front">
+                        <img src="images/PhotoSkills/logo-boostrap.jpeg" alt="logo de boostrap">
+                    </div>
+                    <div class="back">
+                        <p>Maîtrise de Bootstrap et de son approche utilitaire, incluant utilisation des classes prédéfinies, adaptation de modèles et personnalisation.</p>
+                    </div>
+                </div>
+                
+                <!-- ReactJs -->
+                <div class="card gsap-card">
+                    <div class="front">
+                        <img src="images/PhotoSkills/logo-reactjs.jpg" alt="logo de reactjs">
+                    </div>
+                    <div class="back">
+                        <p>En phase d'apprentissage...</p>
+                    </div>
+                </div>
+                
+                <!-- Flutter -->
+                <div class="card gsap-card">
+                    <div class="front">
+                        <img src="images/PhotoSkills/logo-flutter.jpg" alt="logo de flutter">
+                    </div>
+                    <div class="back">
+                        <p>Maîtrise de Flutter pour le développement multiplateforme, incluant création d'interfaces avec widgets, gestion des données.</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Outils & Environnements de développement -->
+            <h3 class="categorie-skill">👉 Outils & Environnements de développement</h3>
+            <div class="conteneur-skills">
+                
+                <!-- Git -->
+                <div class="card gsap-card">
+                    <div class="front">
+                        <img src="images/PhotoSkills/logo-git.jpg" alt="logo de git">
+                    </div>
+                    <div class="back">
+                        <p>Maîtrise de Git pour le versionnement et la publication sur GitHub et expérience en déploiement et maintenance de projets.</p>
+                    </div>
+                </div>
+                
+                <!-- Vs code -->
+                <div class="card gsap-card">
+                    <div class="front">
+                        <img src="images/PhotoSkills/logo-vsCode.jpg" alt="logo Vs Code">
+                    </div>
+                    <div class="back">
+                        <p>Maîtrise de Visual Studio Code comme environnement principal pour le développement web et logiciel.</p>
+                    </div>
+                </div>
+                
+                <!-- Android Studio -->
+                <div class="card gsap-card">
+                    <div class="front">
+                        <img src="images/PhotoSkills/logo-androidStudio.jpg" alt="logo Android Studio">
+                    </div>
+                    <div class="back">
+                        <p>Maîtrise d'Android Studio pour le développement et le déploiement d'applications Android.</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Outils de Simulation -->
+            <h3 class="categorie-skill">👉 Les Outils de Simulation</h3>
+            <div class="conteneur-skills">
+                
+                <!-- Simulink -->
+                <div class="card gsap-card">
+                    <div class="front">
+                        <img src="images/PhotoSkills/logo-simulink.jpg" alt="logo du Simulink">
+                    </div>
+                    <div class="back">
+                        <p>Maîtrise des bases : modélisation et simulation de systèmes et circuits simples.</p>
+                    </div>
+                </div>
+                
+                <!-- CATIA V5 -->
+                <div class="card gsap-card">
+                    <div class="front">
+                        <img src="images/PhotoSkills/logo-catia.jpg" alt="logo du CATIA V5">
+                    </div>
+                    <div class="back">
+                        <p>Niveau opérationnel : conception et assemblage de pièces mécaniques, utilisation des fonctionnalités avancées de modélisation.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- SECTION EXPÉRIENCES -->
+        <section id="experience">
+            <h2 class="titre-section">Mes Expériences</h2>
+            <div class="timeline">
+                
+                <!-- Expérience 1 -->
+                <div class="timeline-item">
+                    <span class="date">Janvier 2025 – Décembre 2025</span>
+                    <div class="content">
+                        <h3>Membre de L'Association Malienne (ASEM)</h3>
+                        <p>Engagement associatif, travail en équipe et actions communautaires. Participation active à l'organisation d'événements culturels et éducatifs.</p>
+                    </div>
+                </div>
+                
+                <!-- Expérience 2 -->
+                <div class="timeline-item">
+                    <span class="date">Juillet 2025 – Août 2025</span>
+                    <div class="content">
+                        <h3>Agent centre d'appel</h3>
+                        <p>Prospection téléphonique et prise de rendez-vous. Gestion de la relation client et développement des compétences en communication.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- SECTION CONTACT -->
+        <section id="contact-me">
+            <h2 class="titre-section">Vous souhaitez travailler avec moi ou en savoir plus ?</h2>
+            <h3 class="sous-titre-contact">Laissez-moi un message, je vous répondrai avec plaisir</h3>
+            <div class="form-container">
+                <form method="post" action="#">
+                    <div class="form-group">
+                        <label for="prenom">Prénom</label>
+                        <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="nom@gmail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Décrivez votre projet ou demande..." required></textarea>
+                    </div>
+                    <div class="form-buttons">
+                        <button type="submit" class="btn-submit">Envoyer</button>
+                        <button type="reset" class="btn-reset">Réinitialiser</button>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
 
-
-    <!-- Pied de page avec liens de contact -->
+    <!-- ==================== PIED DE PAGE ==================== -->
     <footer>
-        <a href="mailto:lassbakkeita6@gmail.com" aria-label="Envoyer un email">
-            <img src="images/PhotoLiens/logo-email.png" alt="Icône email">
-        </a>
-        <a href="#" aria-label="Profil Facebook">
-            <img src="images/PhotoLiens/logo-facebook.png" alt="Icône Facebook">
-        </a>
-        <a href="https://github.com/LassinaBakaryKeita" aria-label="Profil GitHub">
-            <img src="images/PhotoLiens/logo-github.png" alt="Icône GitHub">
-        </a>
-        <a href="https://www.linkedin.com/in/lassina-bakary-ke%C3%AFta-b28626370/" aria-label="Profil LinkedIn">
-            <img src="images/PhotoLiens/logo-Linkedin.png" alt="Icône LinkedIn">
-        </a>
-    </footer>    
+        <p>&copy; 2026 Lassina Bakary Keïta - Tous droits réservés</p>
+        <p class="footer-text">Développé avec passion ❤️❤️❤️</p>
+    </footer>
 </body>
 </html>
