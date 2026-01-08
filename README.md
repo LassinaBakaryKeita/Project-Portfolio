@@ -1,66 +1,127 @@
-# Personal Portfolio Website
 
-Welcome to my **Personal Portfolio Website** project.  
-This site, designed in **HTML5 and CSS3**, presents my profile, background, and a way to get in touch with me.
+# 💼 Portfolio – Lassina Bakary Keïta
 
-📄 **Project Description**
-
-The site is divided into three main pages:
-
-### Home Page (index.html)
-- Introduction with a hero section and a welcome message.
-- Presentation of my profile and objectives.
-- Links to navigate easily to the other sections.
-
-### About Page (a-propos.html)
-- Information about myself and my background.
-- Details about my interests, goals, and future aspirations.
-
-### Contact Page (contact-me.html)
-- A contact form allowing visitors to send me a message directly.
-- Fields include: name, email, and message.
-- Additional instructions on how to get in touch.
+Bienvenue sur le dépôt de mon **portfolio personnel**.  
+Ce projet présente mon profil, mes compétences, mes projets et mes expériences en tant qu’étudiant en **Software Engineering & Artificial Intelligence**.
 
 ---
 
-⚙️ **Key Features**
-- Fixed navigation bar with links to the main pages.
-- Responsive design: fully adapted to desktop, tablet, and mobile.
-- Interactive hover effects on buttons and links.
-- Contact form with basic validation (name, email, message).
-- Footer with links to social media or contact information.
+## 🌐 Aperçu du projet
+
+Ce portfolio a pour objectif de :
+- Me présenter de manière professionnelle
+- Mettre en avant mes **projets académiques et personnels**
+- Présenter mes **compétences techniques**
+- Faciliter la prise de contact avec des recruteurs ou collaborateurs
+
+👉 **Site en ligne** :  
+🔗 https://lassinabakarykeita.github.io *(si hébergé sur GitHub Pages)*
 
 ---
 
-🛠 **Technologies Used**
-- **HTML5** → structure of the pages  
-- **CSS3** → styling, layout, responsive design  
-- **Google Fonts** → typography  
+## 🛠️ Technologies utilisées
+
+### Front-end
+- **HTML5** – Structure du site
+- **CSS3** – Mise en page, animations et responsive design
+- **JavaScript** – Interactivité et animations
+
+### Librairies & Outils
+- **Font Awesome** – Icônes (réseaux sociaux)
+- **GSAP** – Animations avancées
+- **Typed.js** – Effet de texte animé
+- **Git & GitHub** – Versionnement et déploiement
 
 ---
 
-🖼 **Project Structure**
+## 📂 Structure du projet
 
-<img width="506" height="336" alt="image" src="https://github.com/user-attachments/assets/2dd3895d-cc4e-42c3-a600-a1e46eda34a0" />
-
----
-
-💡 **Notes**
-- This project is static (**HTML and CSS only**). No backend or database is required.  
-- You can easily deploy it on **GitHub Pages**, **Netlify**, or **Vercel**.  
-- The text, colors, and images can be customized for your own portfolio.  
-
----
-
-🤝 **Contributions**
-Contributions are welcome! To contribute:
-
-1. Fork this repository.  
-2. Create a new branch (`git checkout -b feature/my-feature`).  
-3. Commit your changes (`git commit -m "Add a new feature"`).  
-4. Push to the branch (`git push origin feature/my-feature`).  
-5. Open a Pull Request.  
+```bash
+📁 portfolio/
+│
+├── index.html          # Page principale
+├── style.css           # Styles CSS
+├── script.js           # Scripts JavaScript
+│
+├── images/
+│   ├── MaPhoto.jpeg
+│   ├── PhotoProjet/
+│   └── PhotoSkills/
+│
+└── README.md           # Documentation du projet
+````
 
 ---
 
+## 📑 Sections du portfolio
 
+* **About** – Présentation personnelle
+* **Projects** – Projets web, mobile et logiciels
+* **Skills** – Langages, frameworks et outils
+* **Experience** – Expériences académiques et professionnelles
+* **Contact** – Formulaire de contact
+* **Réseaux sociaux** – GitHub, LinkedIn, Facebook, TikTok
+
+---
+
+## 📸 Aperçu visuel
+
+*(Ajoute ici une ou deux captures d’écran du site si tu veux)*
+
+```markdown
+![Aperçu du portfolio](images/screenshot.png)
+```
+
+---
+
+## 🚀 Lancer le projet en local
+
+1. Cloner le dépôt :
+
+```bash
+git clone https://github.com/ton-username/ton-repo.git
+```
+
+2. Accéder au dossier :
+
+```bash
+cd ton-repo
+```
+
+3. Ouvrir le fichier `index.html` dans un navigateur
+
+---
+
+## 📬 Me contacter
+
+* **GitHub** : [https://github.com/LassinaBakaryKeita](https://github.com/LassinaBakaryKeita)
+* **LinkedIn** : [https://www.linkedin.com/in/lassina-bakary-keïta-b28626370/](https://www.linkedin.com/in/lassina-bakary-keïta-b28626370/)
+* **Facebook** : [https://www.facebook.com/lassina.bakary.keita](https://www.facebook.com/lassina.bakary.keita)
+* **TikTok** : [https://www.tiktok.com/@lassina.bakary.ke](https://www.tiktok.com/@lassina.bakary.ke)
+
+---
+
+## 📄 Licence
+
+Ce projet est à but **personnel et éducatif**.
+Toute réutilisation doit mentionner l’auteur.
+
+---
+
+## ❤️ Remerciements
+
+Merci d’avoir pris le temps de visiter mon portfolio.
+N’hésitez pas à me contacter pour toute collaboration ou opportunité !
+
+```
+
+---
+
+### ✅ Si tu veux, je peux aussi :
+- Adapter le README pour **GitHub Pages**
+- Le rendre **plus orienté recruteur**
+- Ajouter une section **Objectifs professionnels**
+- Le rédiger **en anglais**
+
+Dis-moi 😉
+```
