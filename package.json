@@ -1,0 +1,32 @@
+{
+  "name": "projet_portfolio",
+  "version": "1.0.0",
+  "description": "Bienvenue sur le dépôt de mon **portfolio personnel**.  \r Ce projet présente mon profil, mes compétences, mes projets et mes expériences en tant qu’étudiant en **Software Engineering & Artificial Intelligence**.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LassinaBakaryKeita/Project-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/LassinaBakaryKeita/Project-Portfolio/issues"
+  },
+  "homepage": "https://github.com/LassinaBakaryKeita/Project-Portfolio#readme",
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@vitejs/plugin-react": "^6.1.1",
+    "framer-motion": "^13.1.1",
+    "lucide-react": "^1.38.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^7.18.3",
+    "react-type-animation": "^3.2.0",
+    "vite": "^8.2.2"
+  }
+}
