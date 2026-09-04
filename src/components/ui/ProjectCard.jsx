@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import { ExternalLink, Github, ArrowRight } from 'lucide-react';
+import { ExternalLink, ArrowRight } from 'lucide-react';
+import { Github } from './Icons';
 
 export default function ProjectCard({ project }) {
   const { id, title, shortDesc, image, technologies, liveUrl, githubUrl } = project;

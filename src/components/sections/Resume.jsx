@@ -1,4 +1,5 @@
-import { Download, FileText, Mail, MapPin, Github, Linkedin, Briefcase, GraduationCap } from 'lucide-react';
+import { Download, FileText, Mail, MapPin, Briefcase, GraduationCap } from 'lucide-react';
+import { Github, Linkedin } from '../ui/Icons';
 import { profile, experiences, education, skills, socialLinks } from '../../data/portfolio';
 
 export default function Resume() {

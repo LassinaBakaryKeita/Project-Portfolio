@@ -4,16 +4,18 @@
   "description": "Bienvenue sur le dépôt de mon **portfolio personnel**.  \r Ce projet présente mon profil, mes compétences, mes projets et mes expériences en tant qu’étudiant en **Software Engineering & Artificial Intelligence**.",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LassinaBakaryKeita/Project-Portfolio.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Lassina Bakary Keïta",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/LassinaBakaryKeita/Project-Portfolio/issues"
   },
