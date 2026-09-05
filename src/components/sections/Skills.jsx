@@ -1,10 +1,14 @@
 import { useState } from 'react';
-import { Code, Layers, Wrench, Cpu } from 'lucide-react';
+import { Code, Layers, Wrench, Cpu, BarChart3, Workflow } from 'lucide-react';
 import { skills } from '../../data/portfolio';
 
 const categoryIconMap = {
   code: Code,
   layers: Layers,
+  data: BarChart3,
+  'bar-chart': BarChart3,
+  workflow: Workflow,
+  'git-branch': Workflow,
   tool: Wrench,
   cpu: Cpu,
 };

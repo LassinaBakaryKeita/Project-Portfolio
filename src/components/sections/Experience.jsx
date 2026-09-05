@@ -7,7 +7,7 @@ export default function Experience() {
         <span className="section-label">Parcours</span>
         <h1 className="section-title">Expériences</h1>
         <p className="section-description">
-          Mon parcours professionnel et associatif — chaque expérience qui forge mon profil.
+          Mon parcours professionnel et associatif chaque expérience qui forge mon profil.
         </p>
       </div>
 

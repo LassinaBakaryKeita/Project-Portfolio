@@ -63,7 +63,7 @@ export default function Privacy() {
 
         <h2>6. Vos droits & Contact</h2>
         <p>
-          Vous pouvez à tout moment demander des précisions ou la suppression d'un message envoyé en écrivant directement à l'adresse suivante : <a href="mailto:lassinabakarykeita@gmail.com" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>lassinabakarykeita@gmail.com</a>.
+          Vous pouvez à tout moment demander des précisions ou la suppression d'un message envoyé en écrivant directement à l'adresse suivante : <a href="mailto:lassbakkeita6@gmail.com" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>lassbakkeita6@gmail.com</a>.
         </p>
       </div>
     </div>

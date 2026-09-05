@@ -56,7 +56,7 @@ export default function Resume() {
             onError={e => { e.target.style.display = 'none'; }}
           />
           <div>
-            <h2 className="resume-name">{profile.name}</h2>
+            <h2 className="resume-name">{profile.firstName} {profile.name}</h2>
             <p className="resume-role">{profile.title}</p>
             <div className="resume-contacts">
               <span className="resume-contact-item">
@@ -81,12 +81,16 @@ export default function Resume() {
           </div>
         </div>
 
+
         {/* Summary */}
         <h3 className="resume-section-title">Profil</h3>
         <p style={{ fontSize: 'var(--font-size-sm)', color: 'var(--text-secondary)', lineHeight: 'var(--line-height-relaxed)' }}>
-          Étudiant en Génie Logiciel & Intelligence Artificielle à l'ENSAF (Fès, Maroc).
-          Passionné par le développement web, mobile et les technologies d'IA.
-          Auteur de {totalProjects} projets personnels couvrant le web, le mobile et l'algorithmique.
+          Étudiant en Ingénierie Logicielle & Intelligence Artificielle à l'ENSAF (Fès, Maroc),
+          avec un fort intérêt pour le développement web et une affinité particulière pour le backend.
+          Je m'intéresse également à l'intégration de l'Intelligence Artificielle dans les applications
+          afin de concevoir des produits plus intelligents, utiles et interactifs.
+          À travers mes projets personnels, académiques et professionnels, je développe progressivement
+          une vision orientée produit et architecture logicielle.
         </p>
 
         {/* Formation */}

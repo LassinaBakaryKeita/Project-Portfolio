@@ -19,7 +19,7 @@ export default function Projects() {
         <span className="section-label">Réalisations</span>
         <h1 className="section-title">Mes projets</h1>
         <p className="section-description">
-          {projects.length} projets réalisés au fil de ma formation — du web au mobile, du C à React.
+          {projects.length} projets réalisés au fil de ma formation.
         </p>
       </div>
 
@@ -42,7 +42,7 @@ export default function Projects() {
         >
           Tous ({projects.length})
         </button>
-        {allTechs.slice(0, 10).map(tech => (
+        {allTechs.slice(0, 15).map(tech => (
           <button
             key={tech}
             className="tech-tag"

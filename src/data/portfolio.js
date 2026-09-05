@@ -160,7 +160,7 @@ Ce projet m'a initié au développement mobile cross-platform avec Flutter et m'
     technologies: ["Flutter", "Dart"],
     liveUrl: null,
     githubUrl: "https://github.com/LassinaBakaryKeita/Projet-App-Mobile-LassiExpense",
-    featured: true,
+    featured: false,
   },
   {
     id: "quiz-master",
@@ -212,7 +212,7 @@ Fonctionnalités : authentification sécurisée, tableau de bord analytique, ges
     technologies: ["PHP", "MySQL", "JavaScript", "HTML5", "CSS3"],
     liveUrl: "https://projevo-app-web.rf.gd/index.php",
     githubUrl: "https://github.com/LassinaBakaryKeita/App-Web-Projevo",
-    featured: true,
+    featured: false,
   },
   {
     id: "devknowledge",
@@ -222,7 +222,7 @@ Fonctionnalités : authentification sécurisée, tableau de bord analytique, ges
 Construite from scratch avec React, Node.js, Express et MongoDB Atlas.
 Fonctionnalités : authentification JWT, upload d'images, interface entièrement responsive, recherche d'articles, profils utilisateurs.`,
     image: "/images/PhotoProjet/devKnowledge.png",
-    technologies: ["React", "Node.js", "Express", "MongoDB Atlas", "JWT"],
+    technologies: ["React.js", "Node.js", "Express.js", "MongoDB Atlas", "JWT"],
     liveUrl: "https://app-web-dev-knowledge.vercel.app/",
     githubUrl: "https://github.com/LassinaBakaryKeita/App-web-DevKnowledge",
     featured: true,
@@ -373,7 +373,7 @@ export const skills = [
 
   {
     category: "Bibliothèques scientifiques & Data",
-    icon: "bar-chart",
+    icon: "data",
     items: [
       {
         name: "NumPy",
@@ -404,11 +404,11 @@ export const skills = [
 
   {
     category: "Conception & Modélisation",
-    icon: "git-branch",
+    icon: "workflow",
     items: [
       {
         name: "UML",
-        image: "/images/PhotoSkills/logo-uml.png",
+        image: "/images/PhotoSkills/logo-uml.jpg",
         description:
           "Connaissances en modélisation logicielle avec UML : diagrammes de cas d'utilisation, de classes, de séquence et d'activité, ainsi que diagrammes de packages et d'objets.",
       },
@@ -543,14 +543,41 @@ export const experiences = [
 export const education = [
   {
     id: "ensaf-ilia",
-    degree: "Cycle Ingénieur: Ingéniérie Logicielle & Intelligence Artificielle (ILIA)",
+    degree: "Cycle Ingénieur : Ingénierie Logicielle & Intelligence Artificielle (ILIA)",
     institution: "École Nationale des Sciences Appliquées de Fès (ENSAF)",
     institutionUrl: "https://ensaf.ac.ma/?controller=pages&action=home",
     startDate: "2023",
     endDate: "2028 (prévu)",
     current: true,
-    description: "Formation d'ingénieur en Informatique spécialisée en Ingéniérie Logicielle et Intelligence Artificielle. Cours en algorithmique avancée, développement logiciel, IA, Data Science, systèmes embarqués et développement web/mobile.",
+    description:
+      "Formation d'ingénieur en informatique spécialisée en Ingénierie Logicielle et Intelligence Artificielle. Cours en algorithmique avancée, développement logiciel, intelligence artificielle, Data Science, systèmes embarqués et développement web et mobile.",
     location: "Fès, Maroc",
+  },
+
+  {
+    id: "bac-malien",
+    degree: "Baccalauréat Malien, Série Sciences Exactes",
+    institution: "Lycée Les Castors",
+    institutionUrl: "https://lyceelescastors.com/",
+    startDate: "2020",
+    endDate: "2023",
+    current: false,
+    description:
+      "Formation secondaire scientifique progressive sur trois années, débutant par une année de formation générale en sciences, économie et littérature, puis deux années de spécialisation scientifique. Approfondissement des mathématiques, de la physique-chimie, de la biologie et de la géologie, avec pour objectif de consolider les bases scientifiques et le raisonnement nécessaires à la poursuite d'études supérieures, notamment dans les domaines scientifiques et technologiques.",
+    location: "Badalabougou, Bamako, Mali",
+  },
+
+  {
+    id: "def-malien",
+    degree: "Diplôme d'Études Fondamentales (DEF)",
+    institution: "École Fondamentale Publique",
+    institutionUrl: "#",
+    startDate: "2010",
+    endDate: "2020",
+    current: false,
+    description:
+      "Formation fondamentale destinée à construire un socle de connaissances générales et à préparer à la poursuite des études secondaires. Enseignements en mathématiques, sciences physiques et naturelles, français, anglais, histoire-géographie, éducation civique et morale, éducation physique et sportive, ainsi que dans les principales disciplines linguistiques. Cette formation a permis d'acquérir les bases scolaires, le raisonnement et la culture générale nécessaires pour aborder le cycle secondaire.",
+    location: "Kalaban Coura, Bamako, Mali",
   },
 ];
 
@@ -565,6 +592,15 @@ export const certifications = [
   //   credentialUrl: "https://...",
   //   image: null,
   // }
+
+  {
+    id: "cert-1",
+    name: "React",
+    issuer: "E-ntreprenariat Mali",
+    date: "Juillet 2026",
+    credentialUrl: "https://www.ens-rennes.fr/formation/formation-continue/nos-formations/react/",
+    image: "https://miro.medium.com/1*NJSv6DGoKTloI8d8im98zg.png",
+  }
 ];
 
 export const contactReasons = [

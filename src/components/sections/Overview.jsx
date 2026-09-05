@@ -40,7 +40,7 @@ export default function Overview({ activeTab, setActiveTab }) {
           />
           <p className="composer-text">
             {activeTab === 'profil'
-              ? `Étudiant en ${profile.title} — passionné par le développement web, mobile et l'IA.`
+              ? `${profile.title}. Passionné par le développement web et l'intégration de l'IA dans les applications.`
               : `Vous avez un projet ou une opportunité ? Laissez-moi un message !`
             }
           </p>

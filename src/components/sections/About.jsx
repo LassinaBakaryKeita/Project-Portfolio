@@ -6,24 +6,28 @@ export default function About() {
   const highlights = [
     {
       icon: GraduationCap,
-      title: 'Formation d\'excellence',
-      description: 'Cycle Ingénieur en Génie Logiciel & IA (ILIA) à l\'ENSAF'
-    },
-    {
-      icon: BrainCircuit,
-      title: 'Passion pour l\'IA & la Data',
-      description: 'Apprentissage continu en Machine Learning, Deep Learning et algorithmique avancée'
+      title: 'Ingénierie Logicielle & IA',
+      description:
+        "Étudiant en cycle ingénieur à l'ENSAF, spécialisé en Ingénierie Logicielle et Intelligence Artificielle, avec une formation orientée conception et développement de solutions logicielles.",
     },
     {
       icon: Code2,
-      title: 'Polyvalence technique',
-      description: 'Développement d\'applications Web modernes (React, JS), Mobiles (Flutter) et Logicielles (Python, C)'
+      title: 'Développement Web & Backend',
+      description:
+        "Fort intérêt pour le développement web, avec une affinité particulière pour le backend, les API, les bases de données et la conception de solutions web structurées et fiables.",
     },
     {
-      icon: MapPin,
-      title: 'Localisation',
-      description: 'Actuellement basé à Fès, Maroc'
-    }
+      icon: BrainCircuit,
+      title: 'IA appliquée aux produits',
+      description:
+        "Intérêt pour l'intégration de l'Intelligence Artificielle dans les applications web afin de concevoir des produits plus intelligents, utiles et interactifs.",
+    },
+    {
+      icon: Sparkles,
+      title: 'Vision produit & architecture',
+      description:
+        "Objectif de progresser vers la conception de produits logiciels robustes, évolutifs et centrés sur les besoins réels des utilisateurs, avec une vision à long terme orientée architecture logicielle.",
+    },
   ];
 
   return (
@@ -32,7 +36,7 @@ export default function About() {
         <span className="section-label">Présentation</span>
         <h1 className="section-title">À propos de moi</h1>
         <p className="section-description">
-          Découvrez mon parcours, mes motivations et ma vision du génie logiciel et de l'intelligence artificielle.
+          Découvrez mon parcours, mes motivations et ma vision de l'ingénierie logicielle et de l'intelligence artificielle.
         </p>
       </div>
 
@@ -63,7 +67,7 @@ export default function About() {
         <div className="about-text-content">
           <div>
             <h2 style={{ fontSize: 'var(--font-size-xl)', marginBottom: 8, fontWeight: 700 }}>
-              Bonjour ! Je suis <span style={{ color: 'var(--accent)' }}>{profile.name}</span>
+              Bonjour ! Je suis <span style={{ color: 'var(--accent)' }}> {profile.firstName} {profile.name}</span>
             </h2>
             <p style={{ color: 'var(--accent)', fontWeight: 600, fontSize: 'var(--font-size-sm)', marginBottom: 16 }}>
               {profile.title}
