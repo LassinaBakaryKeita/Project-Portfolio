@@ -3,25 +3,31 @@
 // Modifiez ce fichier pour mettre à jour le contenu
 // =============================================
 
+
 export const profile = {
-  name: "Lassina Bakary Keïta",
-  firstName: "Lassina",
-  title: "Étudiant en Génie Logiciel & Intelligence Artificielle",
+  name: "Keïta",
+  firstName: "Lassina Bakary",
+  title: "Étudiant en Ingénierie Logicielle & Intelligence Artificielle",
   school: "ENSAF",
   schoolUrl: "https://ensaf.ac.ma/?controller=pages&action=home",
-  email: "lassinabakarykeita@gmail.com",
+  email: "lassbakkeita6@gmail.com",
   photo: "/images/MaPhoto.jpeg",
-  bio: `Passionné par le monde du développement logiciel, je m'intéresse particulièrement au développement web, mobile et logiciel.
-Je suis également très intéressé par l'Intelligence Artificielle et la Data Science, des domaines qui me motivent à apprendre chaque jour et à relever de nouveaux défis.
-Actuellement étudiant en première année du cycle ingénieur (ILIA1) à l'École Nationale des Sciences Appliquées de Fès (ENSAF), je cherche à combiner mes compétences techniques avec ma curiosité intellectuelle pour créer des solutions innovantes.`,
+
+  bio: `Passionné par le développement logiciel, je m'intéresse particulièrement à la conception et au développement d'applications web modernes, avec une forte affinité pour le développement backend. J'aime comprendre comment concevoir des solutions fiables, évolutives et pensées autour de véritables besoins utilisateurs.
+
+Je m'intéresse également à l'Intelligence Artificielle et plus particulièrement à son intégration dans les applications web afin de créer des produits plus intelligents, utiles et interactifs. Mon objectif est progressivement de développer une expertise à l'intersection du génie logiciel, de l'IA et de l'architecture logicielle orientée produit.
+
+Actuellement étudiant en deuxième année du cycle ingénieur en Ingénierie Logicielle et Intelligence Artificielle à l'École Nationale des Sciences Appliquées de Fès (ENSAF), je continue à développer mes compétences en frontend, backend et conception logicielle à travers des projets personnels, académiques et professionnels.`,
+
   typedStrings: [
-    "Génie Logiciel & IA à l'ENSAF",
-    "Développeur Web & Mobile",
-    "Passionné d'Intelligence Artificielle",
-    "Étudiant en Data Science",
-    "Futur Ingénieur IA"
+    "Étudiant en Génie Logiciel & IA",
+    "Développeur Web Full-Stack",
+    "Backend-Oriented Developer",
+    "Web Developer & AI Enthusiast",
+    "Futur Architecte Logiciel orienté produit"
   ],
-  cvUrl: null, // Ajoutez le chemin vers votre CV PDF ici, ex: "/cv/CV_Lassina_Bakary_Keita.pdf"
+
+  cvUrl: null,  // Ajoutez le chemin vers votre CV PDF ici, ex: "/cv/CV_Lassina_Bakary_Keita.pdf"
 };
 
 export const socialLinks = [
@@ -62,7 +68,7 @@ C'est l'un de mes premiers projets web qui m'a permis d'acquérir des bases soli
     image: "/images/PhotoProjet/RobbieLensPhotography.png",
     technologies: ["HTML5", "CSS3"],
     liveUrl: "https://lassinabakarykeita.github.io/My-first-learning-project/",
-    githubUrl: null,
+    githubUrl: "https://github.com/LassinaBakaryKeita/My-first-learning-project",
     featured: false,
   },
   {
@@ -75,7 +81,7 @@ Ce projet m'a permis de maîtriser la manipulation du DOM et la gestion des év�
     image: "/images/PhotoProjet/Calculatrice.png",
     technologies: ["HTML5", "CSS3", "JavaScript"],
     liveUrl: "https://lassinabakarykeita.github.io/Project-Calculator/",
-    githubUrl: null,
+    githubUrl: "https://github.com/LassinaBakaryKeita/Project-Calculator",
     featured: false,
   },
   {
@@ -93,7 +99,7 @@ Ce projet m'a appris la collaboration en équipe, la gestion de versions avec Gi
   },
   {
     id: "azertype",
-    title: "AzerType — Jeu de Dactylographie",
+    title: "AzerType : Jeu de Dactylographie",
     shortDesc: "Application interactive pour s'entraîner à taper plus vite au clavier.",
     description: `AzerType est une application interactive conçue avec HTML5, CSS3 et JavaScript, permettant de s'entraîner à taper plus vite au clavier.
 Elle propose différents modes d'entraînement, un chronomètre, un compteur de mots par minute et un score de précision.
@@ -101,7 +107,7 @@ Ce projet m'a permis d'approfondir mes connaissances en JavaScript, notamment la
     image: "/images/PhotoProjet/Azertype.png",
     technologies: ["HTML5", "CSS3", "JavaScript"],
     liveUrl: "https://lassinabakarykeita.github.io/Projet_Apprentissage_De_JavaScript/",
-    githubUrl: null,
+    githubUrl: "https://github.com/LassinaBakaryKeita/Projet_Apprentissage_De_JavaScript",
     featured: false,
   },
   {
@@ -114,7 +120,7 @@ Il m'a permis de maîtriser les concepts avancés du langage C : pointeurs, list
     image: "/images/PhotoProjet/ReseauSocial.jpg",
     technologies: ["C", "Structures de données", "Algorithmes"],
     liveUrl: "https://youtu.be/IIDaGb9QXGk",
-    githubUrl: null,
+    githubUrl: "https://github.com/LassinaBakaryKeita/Mini-Projet-Simulation-Reseau-Social",
     featured: false,
   },
   {
@@ -127,7 +133,7 @@ Ce projet m'a permis de progresser en design web responsive et d'utiliser des te
     image: "/images/PhotoProjet/ecommerceAlimentaire.png",
     technologies: ["HTML5", "CSS3", "JavaScript"],
     liveUrl: "https://lassinabakarykeita.github.io/Projet_Site_E-Commerce_Alimentaire/",
-    githubUrl: null,
+    githubUrl: "https://github.com/LassinaBakaryKeita/Projet_Site_E-Commerce_Alimentaire",
     featured: false,
   },
   {
@@ -140,7 +146,7 @@ Ce projet combine des connaissances techniques en développement web avec des no
     image: "/images/PhotoProjet/lassinaQualiSol.png",
     technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap 5"],
     liveUrl: "https://lassinabakarykeita.github.io/Project-App-Web-LassinaQualiSol/",
-    githubUrl: null,
+    githubUrl: "https://github.com/LassinaBakaryKeita/Project-App-Web-LassinaQualiSol",
     featured: false,
   },
   {
@@ -166,7 +172,7 @@ Le système de scoring, les animations et l'interface intuitive rendent l'appren
     image: "/images/PhotoProjet/quizMaster.png",
     technologies: ["HTML5", "CSS3", "JavaScript"],
     liveUrl: "https://lassinabakarykeita.github.io/Projet_Jeux_Quiz/",
-    githubUrl: null,
+    githubUrl: "https://github.com/LassinaBakaryKeita/Projet_Jeux_Quiz",
     featured: false,
   },
   {
@@ -192,7 +198,7 @@ L'interface offre une navigation fluide, une barre de progression, une playlist 
     image: "/images/PhotoProjet/LecteurMusique.png",
     technologies: ["HTML5", "CSS3", "JavaScript", "Web Audio API"],
     liveUrl: "https://lassinabakarykeita.github.io/Projet_Lecteur-Musique/",
-    githubUrl: null,
+    githubUrl: "https://github.com/LassinaBakaryKeita/Projet_Lecteur-Musique",
     featured: false,
   },
   {
@@ -205,7 +211,7 @@ Fonctionnalités : authentification sécurisée, tableau de bord analytique, ges
     image: "/images/PhotoProjet/projevo.png",
     technologies: ["PHP", "MySQL", "JavaScript", "HTML5", "CSS3"],
     liveUrl: "https://projevo-app-web.rf.gd/index.php",
-    githubUrl: null,
+    githubUrl: "https://github.com/LassinaBakaryKeita/App-Web-Projevo",
     featured: true,
   },
   {
@@ -218,7 +224,38 @@ Fonctionnalités : authentification JWT, upload d'images, interface entièrement
     image: "/images/PhotoProjet/devKnowledge.png",
     technologies: ["React", "Node.js", "Express", "MongoDB Atlas", "JWT"],
     liveUrl: "https://app-web-dev-knowledge.vercel.app/",
-    githubUrl: null,
+    githubUrl: "https://github.com/LassinaBakaryKeita/App-web-DevKnowledge",
+    featured: true,
+  },
+
+  {
+    id: "sinova-ai",
+    title: "SinovaAI",
+    shortDesc:
+      "Plateforme d'apprentissage assistée par l'IA conçue pour faciliter l'apprentissage de la programmation grâce à la sélection intelligente de ressources et à des assistants IA contextuels.",
+    description: `SinovaAI est une plateforme web conçue pour rendre l'apprentissage de la programmation plus intelligent et plus personnalisé grâce à l'Intelligence Artificielle.
+Lorsqu'un utilisateur recherche un concept informatique, la plateforme exploite l'API YouTube pour identifier les meilleures ressources correspondant à sa recherche, puis applique ses propres critères afin de sélectionner les vidéos les plus pertinentes pour l'apprentissage.
+SinovaAI permet également de retrouver des documents liés au concept recherché et propose un assistant IA contextuel associé aux ressources consultées, permettant à l'utilisateur de poser des questions en fonction du contenu qu'il est en train d'apprendre.
+La plateforme intègre également un assistant IA généraliste destiné à répondre à des questions plus larges liées à l'apprentissage et au développement informatique.
+Développée avec l'architecture PERN Stack.`,
+    image: "/images/PhotoProjet/sinovaAI.png",
+    technologies: ["PostgreSQL", "Express.js", "React.js", "Node.js", "Prisma", "Gemini API", "YouTube Data API", "JWT"],
+    liveUrl: "https://sinova-ai.vercel.app/",
+    githubUrl: "https://github.com/LassinaBakaryKeita/Project_SinovaAI",
+    featured: true,
+  },
+  {
+    id: "ouriam",
+    title: "OURIAM",
+    shortDesc:
+      "Plateforme e-commerce dédiée à la présentation de vêtements, avec commandes via WhatsApp et Snapchat et un espace d'administration pour la gestion de l'activité.",
+    description: `OURIAM est une plateforme e-commerce conçue pour présenter les collections et les vêtements d'une cliente et permettre aux utilisateurs de passer facilement leurs commandes via WhatsApp ou Snapchat.
+Le site intègre également un espace d'administration permettant de gérer les produits, les catégories et les collections, ainsi que de suivre différentes informations liées à l'activité, notamment le chiffre d'affaires, les produits et les commandes.
+Le projet a été développé avec une architecture PERN Stack et utilise Supabase Storage pour le stockage des images.`,
+    image: "/images/PhotoProjet/ouriam.png",
+    technologies: ["PostgreSQL", "Express.js", "React.js", "Node.js", "Prisma", "Supabase Storage", "JWT"],
+    liveUrl: "https://ouriam.vercel.app/",
+    githubUrl: "https://github.com/LassinaBakaryKeita/Project_OURIAM",
     featured: true,
   },
 ];
@@ -231,76 +268,153 @@ export const skills = [
       {
         name: "C",
         image: "/images/PhotoSkills/logo-langageC.png",
-        description: "Maîtrise des bases (variables, chaînes, boucles) et concepts avancés : fonctions, récursivité, pointeurs, allocation dynamique, structures de données.",
+        description:
+          "Maîtrise des bases de la programmation en C et des principaux concepts du langage : fonctions, récursivité, pointeurs, allocation dynamique et structures de données.",
       },
       {
         name: "HTML5",
         image: "/images/PhotoSkills/logo-html5.png",
-        description: "Maîtrise de la création et structuration de pages web : textes, images, liens, tableaux, formulaires, et intégration CSS.",
+        description:
+          "Maîtrise de la structuration de pages web : textes, images, liens, tableaux, formulaires et intégration avec CSS.",
       },
       {
         name: "CSS3",
         image: "/images/PhotoSkills/logo-css.png",
-        description: "Maîtrise du style et mise en page : couleurs, typographies, bordures, ombres, Flexbox, CSS Grid et responsive design avec Media Queries.",
+        description:
+          "Maîtrise de la mise en forme et de la mise en page avec CSS : Flexbox, CSS Grid, responsive design, typographie, couleurs, bordures et effets visuels.",
       },
       {
         name: "JavaScript",
         image: "/images/PhotoSkills/logo-javascript.png",
-        description: "Maîtrise des bases de la programmation, des concepts essentiels et expérience en manipulation du DOM et gestion des événements.",
+        description:
+          "Maîtrise des fondamentaux de JavaScript et expérience en manipulation du DOM, gestion des événements et développement d'interfaces web interactives.",
       },
       {
         name: "Java",
         image: "/images/PhotoSkills/logo-java.jpeg",
-        description: "Maîtrise de Java orienté objet (classes, héritage, polymorphisme, interfaces), gestion du flux, fichiers et sérialisation.",
-      },
-      {
-        name: "XML",
-        image: "/images/PhotoSkills/logo-xml.jpg",
-        description: "Maîtrise de XML pour la création d'interfaces Android, incluant structuration des layouts et configuration des composants.",
-      },
-      {
-        name: "Dart",
-        image: "/images/PhotoSkills/logo-dart.jpg",
-        description: "Connaissance de Dart via le développement Flutter, incluant variables, conditions, fonctions et structures simples.",
+        description:
+          "Connaissances en programmation orientée objet avec Java : classes, héritage, polymorphisme, interfaces, gestion des flux, fichiers et sérialisation.",
       },
       {
         name: "Python",
         image: "/images/PhotoSkills/logo-python.png",
-        description: "Maîtrise des bases de Python et de la programmation scientifique : manipulation de données, utilisation de bibliothèques comme NumPy et Pandas.",
+        description:
+          "Connaissances en Python pour la programmation générale et scientifique, notamment pour la manipulation et l'analyse de données.",
+      },
+      {
+        name: "XML",
+        image: "/images/PhotoSkills/logo-xml.jpg",
+        description:
+          "Connaissances en XML pour la structuration de données et la création d'interfaces Android, notamment avec les fichiers de layout.",
+      },
+      {
+        name: "Dart",
+        image: "/images/PhotoSkills/logo-dart.jpg",
+        description:
+          "Connaissances de base en Dart acquises dans le cadre du développement d'applications avec Flutter : variables, conditions, fonctions et structures de données simples.",
       },
       {
         name: "MATLAB",
         image: "/images/PhotoSkills/logo-matlab.jpeg",
-        description: "Maîtrise des bases : création et manipulation de matrices, opérations mathématiques et programmation de scripts simples.",
+        description:
+          "Connaissances de base en MATLAB : création et manipulation de matrices, opérations mathématiques et développement de scripts simples.",
       },
       {
         name: "LabVIEW",
         image: "/images/PhotoSkills/logo-labview.jpeg",
-        description: "Maîtrise des bases comme modélisation et simulation de systèmes et circuits simples.",
+        description:
+          "Connaissances de base en LabVIEW pour la modélisation, la simulation et la réalisation de systèmes simples.",
       },
     ],
   },
+
   {
     category: "Frameworks & Librairies",
     icon: "layers",
     items: [
       {
-        name: "Bootstrap",
-        image: "/images/PhotoSkills/logo-boostrap.jpeg",
-        description: "Maîtrise de Bootstrap et de son approche utilitaire, incluant utilisation des classes prédéfinies, adaptation de modèles et personnalisation.",
+        name: "Express.js",
+        image: "/images/PhotoSkills/logo-express.png",
+        description:
+          "Compétences en développement d'API REST avec Express.js : structuration des routes et contrôleurs, création et utilisation de middleware, authentification avec JSON Web Token (JWT), gestion des mots de passe et sécurisation des applications.",
       },
       {
         name: "React.js",
         image: "/images/PhotoSkills/logo-reactjs.jpg",
-        description: "Connaissances en développement d'interfaces avec React.js : création de composants, gestion de l'état (useState), manipulation des événements et structuration d'applications web modernes.",
+        description:
+          "Connaissances en développement d'interfaces avec React.js : création de composants, gestion de l'état, gestion des événements et structuration d'applications web modernes.",
+      },
+      {
+        name: "Tailwind CSS",
+        image: "/images/PhotoSkills/logo-tailwindcss.png",
+        description:
+          "Compétences en création d'interfaces web modernes et responsives avec Tailwind CSS et son approche basée sur les classes utilitaires.",
+      },
+      {
+        name: "Bootstrap",
+        image: "/images/PhotoSkills/logo-boostrap.jpeg",
+        description:
+          "Compétences en développement d'interfaces avec Bootstrap : utilisation des composants et classes utilitaires, adaptation de modèles et personnalisation.",
+      },
+      {
+        name: "Spring Boot",
+        image: "/images/PhotoSkills/logo-springboot.png",
+        description:
+          "En cours d'apprentissage : découverte de Spring Boot pour le développement d'applications backend avec Java.",
       },
       {
         name: "Flutter",
         image: "/images/PhotoSkills/logo-flutter.jpg",
-        description: "Maîtrise de Flutter pour le développement multiplateforme, incluant création d'interfaces avec widgets et gestion des données.",
+        description:
+          "Connaissances en développement multiplateforme avec Flutter : création d'interfaces à partir de widgets et gestion des données.",
       },
     ],
   },
+
+  {
+    category: "Bibliothèques scientifiques & Data",
+    icon: "bar-chart",
+    items: [
+      {
+        name: "NumPy",
+        image: "/images/PhotoSkills/logo-numpy.png",
+        description:
+          "Bases en manipulation et traitement de données avec NumPy, notamment pour les opérations sur les tableaux et la préparation des données.",
+      },
+      {
+        name: "Pandas",
+        image: "/images/PhotoSkills/logo-pandas.png",
+        description:
+          "Bases en manipulation et nettoyage de données avec Pandas : lecture de jeux de données, traitement des valeurs manquantes, transformation et préparation des données.",
+      },
+      {
+        name: "Matplotlib",
+        image: "/images/PhotoSkills/logo-matplotlib.png",
+        description:
+          "Bases en visualisation de données avec Matplotlib : création de graphiques pour représenter et faciliter l'analyse des données.",
+      },
+      {
+        name: "Seaborn",
+        image: "/images/PhotoSkills/logo-seaborn.jpeg",
+        description:
+          "Bases en visualisation statistique avec Seaborn : création de graphiques pour explorer les relations entre les variables et faciliter leur interprétation.",
+      },
+    ],
+  },
+
+  {
+    category: "Conception & Modélisation",
+    icon: "git-branch",
+    items: [
+      {
+        name: "UML",
+        image: "/images/PhotoSkills/logo-uml.png",
+        description:
+          "Connaissances en modélisation logicielle avec UML : diagrammes de cas d'utilisation, de classes, de séquence et d'activité, ainsi que diagrammes de packages et d'objets.",
+      },
+    ],
+  },
+
   {
     category: "Outils & Environnements",
     icon: "tool",
@@ -308,20 +422,30 @@ export const skills = [
       {
         name: "Git",
         image: "/images/PhotoSkills/logo-git.jpg",
-        description: "Maîtrise de Git pour le versionnement et la publication sur GitHub. Expérience en déploiement et maintenance de projets.",
+        description:
+          "Maîtrise de Git pour le versionnement, la gestion des branches et la collaboration sur des projets, notamment avec GitHub. Expérience en publication et maintenance de projets.",
       },
       {
         name: "VS Code",
         image: "/images/PhotoSkills/logo-vsCode.jpg",
-        description: "Maîtrise de Visual Studio Code comme environnement principal pour le développement web et logiciel.",
+        description:
+          "Utilisation avancée de Visual Studio Code comme environnement de développement pour les projets web et logiciels.",
+      },
+      {
+        name: "Antigravity",
+        image: "/images/PhotoSkills/logo-antigravity.jpeg",
+        description:
+          "Utilisation d'Antigravity comme environnement de développement assisté par l'IA pour concevoir, développer et faire évoluer des projets logiciels.",
       },
       {
         name: "Android Studio",
         image: "/images/PhotoSkills/logo-androidStudio.jpg",
-        description: "Maîtrise d'Android Studio pour le développement et le déploiement d'applications Android.",
+        description:
+          "Connaissances en utilisation d'Android Studio pour le développement et les tests d'applications Android.",
       },
     ],
   },
+
   {
     category: "Outils de simulation",
     icon: "cpu",
@@ -329,12 +453,14 @@ export const skills = [
       {
         name: "Simulink",
         image: "/images/PhotoSkills/logo-simulink.jpg",
-        description: "Maîtrise des bases : modélisation et simulation de systèmes et circuits simples.",
+        description:
+          "Connaissances de base en modélisation et simulation de systèmes à l'aide de Simulink.",
       },
       {
         name: "CATIA V5",
         image: "/images/PhotoSkills/logo-catia.jpg",
-        description: "Niveau opérationnel : conception et assemblage de pièces mécaniques, utilisation des fonctionnalités avancées de modélisation.",
+        description:
+          "Connaissances en conception et assemblage de pièces mécaniques avec CATIA V5.",
       },
     ],
   },
@@ -342,15 +468,60 @@ export const skills = [
 
 export const experiences = [
   {
+    id: "stage-initiation",
+    title: "Stagiaire en Développement Web",
+    organization: "Ecole Polytechnique des Génies (EPG)",
+    startDate: "Juin 2026",
+    endDate: "Juillet 2026",
+    current: false,
+    description:
+      "Conception et développement intégral d'un projet proposé dans le cadre du stage, depuis l'analyse du besoin jusqu'à la réalisation de la solution. Mise en pratique des compétences en développement Web, conception d'application et résolution de problèmes.",
+    tags: [
+      "Développement Web",
+      "Conception",
+      "Développement Full-Stack",
+      "Résolution de problèmes",
+    ],
+    link: "[Lien vers le projet / GitHub / Démo]",
+  },
+
+  {
+    id: "projet-client-ouriam",
+    title: "Développeur Full-Stack : Projet Client",
+    organization: "Projet client OURIAM",
+    startDate: "Juillet 2026",
+    endDate: "Aout 2026",
+    current: false,
+    description:
+      "Conception et développement intégral d'une plateforme e-commerce pour une cliente, avec mise en place de l'interface utilisateur, du backend, de la base de données et des fonctionnalités de gestion des produits. Participation également à la mise en ligne et à la configuration technique du projet.",
+    tags: [
+      "Développement Full-Stack",
+      "React",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "Prisma",
+    ],
+    link: "[Lien vers le site / projet]",
+  },
+
+  {
     id: "asem",
     title: "Membre Actif",
     organization: "Association des Étudiants Maliens (ASEM)",
     startDate: "Janvier 2025",
     endDate: "Décembre 2025",
     current: false,
-    description: "Engagement associatif, travail en équipe et actions communautaires. Participation active à l'organisation d'événements culturels et éducatifs au sein de la communauté estudiantine malienne.",
-    tags: ["Travail en équipe", "Organisation d'événements", "Leadership", "Communication"],
+    description:
+      "Engagement associatif, travail en équipe et actions communautaires. Participation active à l'organisation d'événements culturels et éducatifs au sein de la communauté estudiantine malienne.",
+    tags: [
+      "Travail en équipe",
+      "Organisation d'événements",
+      "Leadership",
+      "Communication",
+    ],
   },
+
   {
     id: "centre-appel",
     title: "Agent Centre d'Appel",
@@ -358,21 +529,27 @@ export const experiences = [
     startDate: "Juillet 2025",
     endDate: "Août 2025",
     current: false,
-    description: "Prospection téléphonique et prise de rendez-vous. Gestion de la relation client et développement des compétences en communication professionnelle.",
-    tags: ["Relation client", "Communication", "Prospection", "Gestion du temps"],
+    description:
+      "Prospection téléphonique et prise de rendez-vous. Gestion de la relation client et développement des compétences en communication professionnelle.",
+    tags: [
+      "Relation client",
+      "Communication",
+      "Prospection",
+      "Gestion du temps",
+    ],
   },
 ];
 
 export const education = [
   {
     id: "ensaf-ilia",
-    degree: "Cycle Ingénieur — Génie Logiciel & Intelligence Artificielle (ILIA)",
+    degree: "Cycle Ingénieur: Ingéniérie Logicielle & Intelligence Artificielle (ILIA)",
     institution: "École Nationale des Sciences Appliquées de Fès (ENSAF)",
     institutionUrl: "https://ensaf.ac.ma/?controller=pages&action=home",
-    startDate: "2024",
-    endDate: "2027 (prévu)",
+    startDate: "2023",
+    endDate: "2028 (prévu)",
     current: true,
-    description: "Formation d'ingénieur en Informatique spécialisée en Génie Logiciel et Intelligence Artificielle. Cours en algorithmique avancée, développement logiciel, IA, Data Science, systèmes embarqués et développement web/mobile.",
+    description: "Formation d'ingénieur en Informatique spécialisée en Ingéniérie Logicielle et Intelligence Artificielle. Cours en algorithmique avancée, développement logiciel, IA, Data Science, systèmes embarqués et développement web/mobile.",
     location: "Fès, Maroc",
   },
 ];
@@ -438,7 +615,7 @@ Votre vie privée est prise au sérieux. Les informations transmises via le form
 
 ### 7. Contact
 
-Pour toute question relative à cette politique de confidentialité, vous pouvez me contacter à l'adresse : lassinabakarykeita@gmail.com
+Pour toute question relative à cette politique de confidentialité, vous pouvez me contacter à l'adresse : lassbakkeita6@gmail.com
 
 ### 8. Modifications
 
