@@ -797,10 +797,12 @@ a {
   position: relative;
   overflow: hidden;
   box-shadow: var(--shadow-sm);
+  min-height: 125px;
 }
 
-.skill-card:hover {
-  border-color: var(--border-strong);
+.skill-card:hover,
+.skill-card.active {
+  border-color: var(--accent);
   box-shadow: var(--shadow-md);
 }
 
@@ -824,16 +826,24 @@ a {
   inset: 0;
   background: var(--bg-card);
   border-radius: var(--radius-md);
-  padding: 12px;
+  padding: 12px 8px 12px 12px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
   opacity: 0;
+  pointer-events: none;
   transition: opacity var(--transition-normal);
+  z-index: 2;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) rgba(128, 128, 128, 0.1);
 }
 
-.skill-card:hover .skill-card-tooltip {
+.skill-card:hover .skill-card-tooltip,
+.skill-card.active .skill-card-tooltip {
   opacity: 1;
+  pointer-events: auto;
 }
 
 .skill-card-tooltip p {
@@ -841,6 +851,26 @@ a {
   color: var(--text-secondary);
   text-align: center;
   line-height: 1.5;
+  margin: auto 0;
+}
+
+/* Curseur / Barre de défilement stylisée pour faire défiler le texte */
+.skill-card-tooltip::-webkit-scrollbar {
+  width: 5px;
+}
+
+.skill-card-tooltip::-webkit-scrollbar-track {
+  background: rgba(128, 128, 128, 0.08);
+  border-radius: var(--radius-full);
+}
+
+.skill-card-tooltip::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: var(--radius-full);
+}
+
+.skill-card-tooltip::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-hover);
 }
 
 /* === TIMELINE (EXPERIENCE) === */

@@ -20,7 +20,7 @@ Je m'intéresse également à l'Intelligence Artificielle et plus particulièrem
 Actuellement étudiant en deuxième année du cycle ingénieur en Ingénierie Logicielle et Intelligence Artificielle à l'École Nationale des Sciences Appliquées de Fès (ENSAF), je continue à développer mes compétences en frontend, backend et conception logicielle à travers des projets personnels, académiques et professionnels.`,
 
   typedStrings: [
-    "Étudiant en Génie Logiciel & IA",
+    "Étudiant en Ingénierie Logicielle & Intelligence Artificielle",
     "Développeur Web Full-Stack",
     "Backend-Oriented Developer",
     "Web Developer & AI Enthusiast",
@@ -57,163 +57,8 @@ export const socialLinks = [
   },
 ];
 
+
 export const projects = [
-  {
-    id: "robbie-lens-photography",
-    title: "Site Web Robbie Lens Photography",
-    shortDesc: "Site web de photographe professionnel présentant ses services, projets récents et portfolio.",
-    description: `Ce site web de photographe professionnel, conçu en HTML5 et CSS3, présente ses services, ses projets récents et son portfolio.
-Il offre une navigation intuitive, des galeries d'images élégantes et une présentation soignée du travail photographique.
-C'est l'un de mes premiers projets web qui m'a permis d'acquérir des bases solides en structuration HTML et mise en page CSS.`,
-    image: "/images/PhotoProjet/RobbieLensPhotography.png",
-    technologies: ["HTML5", "CSS3"],
-    liveUrl: "https://lassinabakarykeita.github.io/My-first-learning-project/",
-    githubUrl: "https://github.com/LassinaBakaryKeita/My-first-learning-project",
-    featured: false,
-  },
-  {
-    id: "calculatrice-web",
-    title: "La Calculatrice de Lassina",
-    shortDesc: "Calculatrice web simple mais puissante avec interface interactive et réactive.",
-    description: `Il s'agit d'une calculatrice simple mais puissante, construite avec HTML5, CSS3 et JavaScript, offrant une interface interactive et réactive.
-Elle supporte les opérations arithmétiques de base (addition, soustraction, multiplication, division) ainsi qu'une gestion des erreurs robuste.
-Ce projet m'a permis de maîtriser la manipulation du DOM et la gestion des événements en JavaScript.`,
-    image: "/images/PhotoProjet/Calculatrice.png",
-    technologies: ["HTML5", "CSS3", "JavaScript"],
-    liveUrl: "https://lassinabakarykeita.github.io/Project-Calculator/",
-    githubUrl: "https://github.com/LassinaBakaryKeita/Project-Calculator",
-    featured: false,
-  },
-  {
-    id: "ilia-site",
-    title: "Site Web de la Filière ILIA",
-    shortDesc: "Projet collaboratif de présentation de la communauté ILIA et facilitation du partage de connaissances.",
-    description: `Il s'agit d'un projet de collaboration basé sur une présentation de la communauté ILIA et la facilitation du partage de connaissances.
-Ce site web a été développé en équipe pour présenter notre filière à l'ENSAF, ses membres, ses projets et ses actualités.
-Ce projet m'a appris la collaboration en équipe, la gestion de versions avec Git et le travail sur une codebase partagée.`,
-    image: "/images/PhotoProjet/iliasite.png",
-    technologies: ["HTML5", "CSS3", "JavaScript"],
-    liveUrl: "https://farahcrafts.github.io/Ilia-site/",
-    githubUrl: null,
-    featured: false,
-  },
-  {
-    id: "azertype",
-    title: "AzerType : Jeu de Dactylographie",
-    shortDesc: "Application interactive pour s'entraîner à taper plus vite au clavier.",
-    description: `AzerType est une application interactive conçue avec HTML5, CSS3 et JavaScript, permettant de s'entraîner à taper plus vite au clavier.
-Elle propose différents modes d'entraînement, un chronomètre, un compteur de mots par minute et un score de précision.
-Ce projet m'a permis d'approfondir mes connaissances en JavaScript, notamment la gestion des événements clavier et la manipulation du DOM.`,
-    image: "/images/PhotoProjet/Azertype.png",
-    technologies: ["HTML5", "CSS3", "JavaScript"],
-    liveUrl: "https://lassinabakarykeita.github.io/Projet_Apprentissage_De_JavaScript/",
-    githubUrl: "https://github.com/LassinaBakaryKeita/Projet_Apprentissage_De_JavaScript",
-    featured: false,
-  },
-  {
-    id: "reseau-social-c",
-    title: "Simulation d'un Réseau Social (C)",
-    shortDesc: "Simulation d'un réseau social en C axé sur l'implémentation de structures de données.",
-    description: `Projet de simulation d'un réseau social en C axé sur l'implémentation et l'interconnexion des structures de données.
-Ce projet implémente des fonctionnalités comme l'ajout d'amis, la recherche d'utilisateurs, les suggestions de connexions et la gestion de profils.
-Il m'a permis de maîtriser les concepts avancés du langage C : pointeurs, listes chaînées, arbres, graphes et gestion dynamique de la mémoire.`,
-    image: "/images/PhotoProjet/ReseauSocial.jpg",
-    technologies: ["C", "Structures de données", "Algorithmes"],
-    liveUrl: "https://youtu.be/IIDaGb9QXGk",
-    githubUrl: "https://github.com/LassinaBakaryKeita/Mini-Projet-Simulation-Reseau-Social",
-    featured: false,
-  },
-  {
-    id: "organic-food-store",
-    title: "Organic Food Store",
-    shortDesc: "Site e-commerce moderne et responsive pour une boutique de produits alimentaires biologiques.",
-    description: `Organic Food Store est un site web responsive moderne pour une boutique de produits alimentaires 100% biologiques.
-Il présente les produits de manière élégante, avec un catalogue complet, des fiches produit détaillées et un design soigné.
-Ce projet m'a permis de progresser en design web responsive et d'utiliser des techniques CSS avancées pour créer une interface attrayante.`,
-    image: "/images/PhotoProjet/ecommerceAlimentaire.png",
-    technologies: ["HTML5", "CSS3", "JavaScript"],
-    liveUrl: "https://lassinabakarykeita.github.io/Projet_Site_E-Commerce_Alimentaire/",
-    githubUrl: "https://github.com/LassinaBakaryKeita/Projet_Site_E-Commerce_Alimentaire",
-    featured: false,
-  },
-  {
-    id: "lassina-qualisol",
-    title: "LassinaQualiSol",
-    shortDesc: "Application web d'analyse de la qualité des sols agricoles.",
-    description: `Application web innovante d'analyse de la qualité des sols agricoles, développée avec HTML5, CSS3, JavaScript et Bootstrap 5.
-Elle permet aux agriculteurs et chercheurs d'évaluer la qualité de leurs sols en entrant des paramètres clés et d'obtenir des recommandations.
-Ce projet combine des connaissances techniques en développement web avec des notions d'agronomie pour créer un outil utile.`,
-    image: "/images/PhotoProjet/lassinaQualiSol.png",
-    technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap 5"],
-    liveUrl: "https://lassinabakarykeita.github.io/Project-App-Web-LassinaQualiSol/",
-    githubUrl: "https://github.com/LassinaBakaryKeita/Project-App-Web-LassinaQualiSol",
-    featured: false,
-  },
-  {
-    id: "lassi-expense",
-    title: "LassiExpense",
-    shortDesc: "Application mobile Flutter de gestion de budget et suivi des dépenses.",
-    description: `Application mobile de gestion de budget développée avec Flutter et Dart pour suivre les dépenses et gérer les budgets.
-Elle permet d'ajouter, catégoriser et visualiser ses dépenses, de définir des budgets par catégorie et de générer des rapports.
-Ce projet m'a initié au développement mobile cross-platform avec Flutter et m'a permis de maîtriser Dart.`,
-    image: "/images/PhotoProjet/lassiExpense.png",
-    technologies: ["Flutter", "Dart"],
-    liveUrl: null,
-    githubUrl: "https://github.com/LassinaBakaryKeita/Projet-App-Mobile-LassiExpense",
-    featured: false,
-  },
-  {
-    id: "quiz-master",
-    title: "Quiz Master",
-    shortDesc: "Application web de quiz interactif multi-matières et multi-niveaux.",
-    description: `Application web de quiz interactif multi-matières et multi-niveaux, développée avec HTML5, CSS3 et JavaScript.
-Elle propose des quiz dans différentes matières (mathématiques, informatique, culture générale) avec différents niveaux de difficulté.
-Le système de scoring, les animations et l'interface intuitive rendent l'apprentissage ludique et engageant.`,
-    image: "/images/PhotoProjet/quizMaster.png",
-    technologies: ["HTML5", "CSS3", "JavaScript"],
-    liveUrl: "https://lassinabakarykeita.github.io/Projet_Jeux_Quiz/",
-    githubUrl: "https://github.com/LassinaBakaryKeita/Projet_Jeux_Quiz",
-    featured: false,
-  },
-  {
-    id: "calculatrice-android",
-    title: "Calculatrice Android",
-    shortDesc: "Application Android de calculatrice avec opérations arithmétiques et conversions.",
-    description: `Application mobile Android développée en Java et XML avec Android Studio pour opérations arithmétiques et conversions.
-Elle offre une interface intuitive inspirée des calculatrices modernes avec historique de calculs et conversions d'unités.
-Ce projet m'a permis de maîtriser le développement Android natif avec Java et Android Studio.`,
-    image: "/images/PhotoProjet/CalculatriceAndroid.png",
-    technologies: ["Java", "XML", "Android Studio"],
-    liveUrl: null,
-    githubUrl: "https://github.com/LassinaBakaryKeita/Projet_Android_Calculatrice",
-    featured: false,
-  },
-  {
-    id: "lecteur-musique",
-    title: "Lecteur de Musique",
-    shortDesc: "Lecteur de musique web moderne avec playlist dynamique et contrôles interactifs.",
-    description: `Un lecteur de musique web moderne et responsive développé en HTML, CSS et JavaScript.
-Il permet de lire et gérer une playlist audio avec des contrôles interactifs : lecture, pause, suivant, précédent, volume.
-L'interface offre une navigation fluide, une barre de progression, une playlist dynamique et la lecture automatique des morceaux suivants.`,
-    image: "/images/PhotoProjet/LecteurMusique.png",
-    technologies: ["HTML5", "CSS3", "JavaScript", "Web Audio API"],
-    liveUrl: "https://lassinabakarykeita.github.io/Projet_Lecteur-Musique/",
-    githubUrl: "https://github.com/LassinaBakaryKeita/Projet_Lecteur-Musique",
-    featured: false,
-  },
-  {
-    id: "projevo",
-    title: "Projevo",
-    shortDesc: "Application web full-stack de gestion de projets avec tableau de bord analytique.",
-    description: `Une application web full-stack de gestion de projets développée en PHP, MySQL et JavaScript.
-Elle permet aux utilisateurs de créer, organiser et suivre leurs projets et tâches avec une interface moderne.
-Fonctionnalités : authentification sécurisée, tableau de bord analytique, gestion complète des données en temps réel, rôles utilisateurs.`,
-    image: "/images/PhotoProjet/projevo.png",
-    technologies: ["PHP", "MySQL", "JavaScript", "HTML5", "CSS3"],
-    liveUrl: "https://projevo-app-web.rf.gd/index.php",
-    githubUrl: "https://github.com/LassinaBakaryKeita/App-Web-Projevo",
-    featured: false,
-  },
   {
     id: "devknowledge",
     title: "DevKnowledge",
@@ -239,11 +84,21 @@ SinovaAI permet également de retrouver des documents liés au concept recherch�
 La plateforme intègre également un assistant IA généraliste destiné à répondre à des questions plus larges liées à l'apprentissage et au développement informatique.
 Développée avec l'architecture PERN Stack.`,
     image: "/images/PhotoProjet/sinovaAI.png",
-    technologies: ["PostgreSQL", "Express.js", "React.js", "Node.js", "Prisma", "Gemini API", "YouTube Data API", "JWT"],
+    technologies: [
+      "PostgreSQL",
+      "Express.js",
+      "React.js",
+      "Node.js",
+      "Prisma",
+      "Gemini API",
+      "YouTube Data API",
+      "JWT",
+    ],
     liveUrl: "https://sinova-ai.vercel.app/",
-    githubUrl: "https://github.com/LassinaBakaryKeita/Project_SinovaAI",
+    githubUrl: null,
     featured: true,
   },
+
   {
     id: "ouriam",
     title: "OURIAM",
@@ -253,12 +108,189 @@ Développée avec l'architecture PERN Stack.`,
 Le site intègre également un espace d'administration permettant de gérer les produits, les catégories et les collections, ainsi que de suivre différentes informations liées à l'activité, notamment le chiffre d'affaires, les produits et les commandes.
 Le projet a été développé avec une architecture PERN Stack et utilise Supabase Storage pour le stockage des images.`,
     image: "/images/PhotoProjet/ouriam.png",
-    technologies: ["PostgreSQL", "Express.js", "React.js", "Node.js", "Prisma", "Supabase Storage", "JWT"],
+    technologies: [
+      "PostgreSQL",
+      "Express.js",
+      "React.js",
+      "Node.js",
+      "Prisma",
+      "Supabase Storage",
+      "JWT",
+    ],
     liveUrl: "https://ouriam.vercel.app/",
-    githubUrl: "https://github.com/LassinaBakaryKeita/Project_OURIAM",
+    githubUrl: null,
     featured: true,
   },
+
+  {
+    id: "projevo",
+    title: "Projevo",
+    shortDesc: "Application web full-stack de gestion de projets avec tableau de bord analytique.",
+    description: `Une application web full-stack de gestion de projets développée en PHP, MySQL et JavaScript.
+Elle permet aux utilisateurs de créer, organiser et suivre leurs projets et tâches avec une interface moderne.
+Fonctionnalités : authentification sécurisée, tableau de bord analytique, gestion complète des données en temps réel, rôles utilisateurs.`,
+    image: "/images/PhotoProjet/projevo.png",
+    technologies: ["PHP", "MySQL", "JavaScript", "HTML5", "CSS3"],
+    liveUrl: "https://projevo-app-web.rf.gd/index.php",
+    githubUrl: "https://github.com/LassinaBakaryKeita/App-Web-Projevo",
+    featured: false,
+  },
+
+  {
+    id: "reseau-social-c",
+    title: "Simulation d'un Réseau Social (C)",
+    shortDesc: "Simulation d'un réseau social en C axé sur l'implémentation de structures de données.",
+    description: `Projet de simulation d'un réseau social en C axé sur l'implémentation et l'interconnexion des structures de données.
+Ce projet implémente des fonctionnalités comme l'ajout d'amis, la recherche d'utilisateurs, les suggestions de connexions et la gestion de profils.
+Il m'a permis de maîtriser les concepts avancés du langage C : pointeurs, listes chaînées, arbres, graphes et gestion dynamique de la mémoire.`,
+    image: "/images/PhotoProjet/ReseauSocial.jpg",
+    technologies: ["C", "Structures de données", "Algorithmes"],
+    liveUrl: "https://youtu.be/IIDaGb9QXGk",
+    githubUrl: "https://github.com/LassinaBakaryKeita/Mini-Projet-Simulation-Reseau-Social",
+    featured: false,
+  },
+
+  {
+    id: "lassina-qualisol",
+    title: "LassinaQualiSol",
+    shortDesc: "Application web d'analyse de la qualité des sols agricoles.",
+    description: `Application web d'analyse de la qualité des sols agricoles, développée avec HTML5, CSS3, JavaScript et Bootstrap 5.
+Elle permet aux agriculteurs et chercheurs d'évaluer la qualité de leurs sols en entrant des paramètres clés et d'obtenir des recommandations.
+Ce projet combine des compétences en développement web avec des notions d'agronomie pour créer un outil utile.`,
+    image: "/images/PhotoProjet/lassinaQualiSol.png",
+    technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap 5"],
+    liveUrl: "https://lassinabakarykeita.github.io/Project-App-Web-LassinaQualiSol/",
+    githubUrl: "https://github.com/LassinaBakaryKeita/Project-App-Web-LassinaQualiSol",
+    featured: false,
+  },
+
+  {
+    id: "ilia-site",
+    title: "Site Web de la Filière ILIA",
+    shortDesc: "Projet collaboratif de présentation de la communauté ILIA et facilitation du partage de connaissances.",
+    description: `Il s'agit d'un projet de collaboration basé sur une présentation de la communauté ILIA et la facilitation du partage de connaissances.
+Ce site web a été développé en équipe pour présenter notre filière à l'ENSAF, ses membres, ses projets et ses actualités.
+Ce projet m'a appris la collaboration en équipe, la gestion de versions avec Git et le travail sur une codebase partagée.`,
+    image: "/images/PhotoProjet/iliasite.png",
+    technologies: ["HTML5", "CSS3", "JavaScript"],
+    liveUrl: "https://farahcrafts.github.io/Ilia-site/",
+    githubUrl: null,
+    featured: false,
+  },
+
+  {
+    id: "organic-food-store",
+    title: "Organic Food Store",
+    shortDesc: "Site e-commerce moderne et responsive pour une boutique de produits alimentaires biologiques.",
+    description: `Organic Food Store est un site web responsive moderne pour une boutique de produits alimentaires 100% biologiques.
+Il présente les produits de manière élégante, avec un catalogue complet, des fiches produit détaillées et un design soigné.
+Ce projet m'a permis de progresser en design web responsive et d'utiliser des techniques CSS avancées pour créer une interface attrayante.`,
+    image: "/images/PhotoProjet/ecommerceAlimentaire.png",
+    technologies: ["HTML5", "CSS3", "JavaScript"],
+    liveUrl: "https://lassinabakarykeita.github.io/Projet_Site_E-Commerce_Alimentaire/",
+    githubUrl: "https://github.com/LassinaBakaryKeita/Projet_Site_E-Commerce_Alimentaire",
+    featured: false,
+  },
+
+  {
+    id: "azertype",
+    title: "AzerType : Jeu de Dactylographie",
+    shortDesc: "Application interactive pour s'entraîner à taper plus vite au clavier.",
+    description: `AzerType est une application interactive conçue avec HTML5, CSS3 et JavaScript, permettant de s'entraîner à taper plus vite au clavier.
+Elle propose différents modes d'entraînement, un chronomètre, un compteur de mots par minute et un score de précision.
+Ce projet m'a permis d'approfondir mes connaissances en JavaScript, notamment la gestion des événements clavier et la manipulation du DOM.`,
+    image: "/images/PhotoProjet/Azertype.png",
+    technologies: ["HTML5", "CSS3", "JavaScript"],
+    liveUrl: "https://lassinabakarykeita.github.io/Projet_Apprentissage_De_JavaScript/",
+    githubUrl: "https://github.com/LassinaBakaryKeita/Projet_Apprentissage_De_JavaScript",
+    featured: false,
+  },
+
+  {
+    id: "quiz-master",
+    title: "Quiz Master",
+    shortDesc: "Application web de quiz interactif multi-matières et multi-niveaux.",
+    description: `Application web de quiz interactif multi-matières et multi-niveaux, développée avec HTML5, CSS3 et JavaScript.
+Elle propose des quiz dans différentes matières (mathématiques, informatique, culture générale) avec différents niveaux de difficulté.
+Le système de scoring, les animations et l'interface intuitive rendent l'apprentissage ludique et engageant.`,
+    image: "/images/PhotoProjet/quizMaster.png",
+    technologies: ["HTML5", "CSS3", "JavaScript"],
+    liveUrl: "https://lassinabakarykeita.github.io/Projet_Jeux_Quiz/",
+    githubUrl: "https://github.com/LassinaBakaryKeita/Projet_Jeux_Quiz",
+    featured: false,
+  },
+
+  {
+    id: "lecteur-musique",
+    title: "Lecteur de Musique",
+    shortDesc: "Lecteur de musique web moderne avec playlist dynamique et contrôles interactifs.",
+    description: `Un lecteur de musique web moderne et responsive développé en HTML, CSS et JavaScript.
+Il permet de lire et gérer une playlist audio avec des contrôles interactifs : lecture, pause, suivant, précédent, volume.
+L'interface offre une navigation fluide, une barre de progression, une playlist dynamique et la lecture automatique des morceaux suivants.`,
+    image: "/images/PhotoProjet/LecteurMusique.png",
+    technologies: ["HTML5", "CSS3", "JavaScript", "Web Audio API"],
+    liveUrl: "https://lassinabakarykeita.github.io/Projet_Lecteur-Musique/",
+    githubUrl: "https://github.com/LassinaBakaryKeita/Projet_Lecteur-Musique",
+    featured: false,
+  },
+
+  {
+    id: "lassi-expense",
+    title: "LassiExpense",
+    shortDesc: "Application mobile Flutter de gestion de budget et suivi des dépenses.",
+    description: `Application mobile de gestion de budget développée avec Flutter et Dart pour suivre les dépenses et gérer les budgets.
+Elle permet d'ajouter, catégoriser et visualiser ses dépenses, de définir des budgets par catégorie et de générer des rapports.
+Ce projet m'a initié au développement mobile cross-platform avec Flutter et m'a permis de maîtriser Dart.`,
+    image: "/images/PhotoProjet/lassiExpense.png",
+    technologies: ["Flutter", "Dart"],
+    liveUrl: null,
+    githubUrl: "https://github.com/LassinaBakaryKeita/Projet-App-Mobile-LassiExpense",
+    featured: false,
+  },
+
+  {
+    id: "calculatrice-android",
+    title: "Calculatrice Android",
+    shortDesc: "Application Android de calculatrice avec opérations arithmétiques et conversions.",
+    description: `Application mobile Android développée en Java et XML avec Android Studio pour opérations arithmétiques et conversions.
+Elle offre une interface intuitive inspirée des calculatrices modernes avec historique de calculs et conversions d'unités.
+Ce projet m'a permis de maîtriser le développement Android natif avec Java et Android Studio.`,
+    image: "/images/PhotoProjet/CalculatriceAndroid.png",
+    technologies: ["Java", "XML", "Android Studio"],
+    liveUrl: null,
+    githubUrl: "https://github.com/LassinaBakaryKeita/Projet_Android_Calculatrice",
+    featured: false,
+  },
+
+  {
+    id: "robbie-lens-photography",
+    title: "Site Web Robbie Lens Photography",
+    shortDesc: "Site web de photographe professionnel présentant ses services, projets récents et portfolio.",
+    description: `Ce site web de photographe professionnel, conçu en HTML5 et CSS3, présente ses services, ses projets récents et son portfolio.
+Il offre une navigation intuitive, des galeries d'images élégantes et une présentation soignée du travail photographique.
+C'est l'un de mes premiers projets web qui m'a permis d'acquérir des bases solides en structuration HTML et mise en page CSS.`,
+    image: "/images/PhotoProjet/RobbieLensPhotography.png",
+    technologies: ["HTML5", "CSS3"],
+    liveUrl: "https://lassinabakarykeita.github.io/My-first-learning-project/",
+    githubUrl: "https://github.com/LassinaBakaryKeita/My-first-learning-project",
+    featured: false,
+  },
+
+  {
+    id: "calculatrice-web",
+    title: "La Calculatrice de Lassina",
+    shortDesc: "Calculatrice web simple mais puissante avec interface interactive et réactive.",
+    description: `Il s'agit d'une calculatrice simple mais puissante, construite avec HTML5, CSS3 et JavaScript, offrant une interface interactive et réactive.
+Elle supporte les opérations arithmétiques de base (addition, soustraction, multiplication, division) ainsi qu'une gestion des erreurs robuste.
+Ce projet m'a permis de maîtriser la manipulation du DOM et la gestion des événements en JavaScript.`,
+    image: "/images/PhotoProjet/Calculatrice.png",
+    technologies: ["HTML5", "CSS3", "JavaScript"],
+    liveUrl: "https://lassinabakarykeita.github.io/Project-Calculator/",
+    githubUrl: "https://github.com/LassinaBakaryKeita/Project-Calculator",
+    featured: false,
+  },
 ];
+
 
 export const skills = [
   {
@@ -593,14 +625,6 @@ export const certifications = [
   //   image: null,
   // }
 
-  {
-    id: "cert-1",
-    name: "React",
-    issuer: "E-ntreprenariat Mali",
-    date: "Juillet 2026",
-    credentialUrl: "https://www.ens-rennes.fr/formation/formation-continue/nos-formations/react/",
-    image: "https://miro.medium.com/1*NJSv6DGoKTloI8d8im98zg.png",
-  }
 ];
 
 export const contactReasons = [

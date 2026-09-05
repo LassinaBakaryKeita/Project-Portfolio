@@ -14,7 +14,11 @@ const categoryIconMap = {
 };
 
 export default function Skills() {
-  const [hoveredSkill, setHoveredSkill] = useState(null);
+  const [activeSkill, setActiveSkill] = useState(null);
+
+  const toggleSkill = (skillId) => {
+    setActiveSkill(prev => (prev === skillId ? null : skillId));
+  };
 
   return (
     <div className="page-wrapper fade-in">
@@ -22,7 +26,7 @@ export default function Skills() {
         <span className="section-label">Technologies</span>
         <h1 className="section-title">Compétences</h1>
         <p className="section-description">
-          Les langages, frameworks et outils que j'utilise au quotidien. Survolez une carte pour en savoir plus.
+          Les langages, frameworks et outils que j'utilise au quotidien. Cliquez ou survolez une carte pour afficher sa description.
         </p>
       </div>
 
@@ -35,31 +39,34 @@ export default function Skills() {
               {category.category}
             </h2>
             <div className="skills-grid">
-              {category.items.map((skill, si) => (
-                <div
-                  key={skill.name}
-                  className="skill-card fade-in-up"
-                  style={{ animationDelay: `${(ci * 0.1) + (si * 0.04)}s` }}
-                  onMouseEnter={() => setHoveredSkill(`${ci}-${si}`)}
-                  onMouseLeave={() => setHoveredSkill(null)}
-                  title={skill.description}
-                >
-                  <img
-                    src={skill.image}
-                    alt={`Logo ${skill.name}`}
-                    className="skill-card-img"
-                    onError={e => {
-                      e.target.style.display = 'none';
-                    }}
-                  />
-                  <span className="skill-card-name">{skill.name}</span>
+              {category.items.map((skill, si) => {
+                const skillId = `${ci}-${si}`;
+                const isActive = activeSkill === skillId;
+                return (
+                  <div
+                    key={skill.name}
+                    className={`skill-card fade-in-up ${isActive ? 'active' : ''}`}
+                    style={{ animationDelay: `${(ci * 0.1) + (si * 0.04)}s` }}
+                    onClick={() => toggleSkill(skillId)}
+                    title={skill.description}
+                  >
+                    <img
+                      src={skill.image}
+                      alt={`Logo ${skill.name}`}
+                      className="skill-card-img"
+                      onError={e => {
+                        e.target.style.display = 'none';
+                      }}
+                    />
+                    <span className="skill-card-name">{skill.name}</span>
 
-                  {/* Tooltip on hover */}
-                  <div className="skill-card-tooltip">
-                    <p>{skill.description}</p>
+                    {/* Tooltip on hover / click avec scrollbar */}
+                    <div className="skill-card-tooltip">
+                      <p>{skill.description}</p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         );
